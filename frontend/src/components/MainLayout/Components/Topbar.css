@@ -1,0 +1,6 @@
+.topbar {
+  background-color: red;
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+}
