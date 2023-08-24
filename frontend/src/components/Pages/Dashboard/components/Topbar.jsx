@@ -2,7 +2,7 @@ import React from 'react';
 import {
   Link
 } from 'react-router-dom';
-import { useContext, Context } from '../../../context';
+import { useContext, Context } from '../../../../context';
 import './Topbar.css'
 import Button from '@mui/material/Button';
 
@@ -24,13 +24,10 @@ const Topbar = () => {
         </>
         : <>
           <Link to="/">
-          <Button variant="contained">Sign In</Button>
-          </Link>
-          <Link id="signIn" to="/signin">
           <Button variant="contained">Sign Up</Button>
           </Link>
-          <Link to="/PlayJoin">
-          <Button variant="contained">Join Game</Button>
+          <Link id="signIn" to="/signin">
+          <Button variant="contained">Sign In</Button>
           </Link>
         </>
       }

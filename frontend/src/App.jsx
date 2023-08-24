@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 // import ReactDOM from 'react-dom';
 
 // import './index.css';
-import MainPage from './components/MainLayout/MainLayout';
+import Router from './components/Router';
 import { Context, initialValue } from './context';
 
 const App = () => {
@@ -22,7 +22,7 @@ const App = () => {
 
   return (
     <Context.Provider value={{ getters, setters, }}>
-      <MainPage />
+      <Router />
     </Context.Provider>
   );
 };

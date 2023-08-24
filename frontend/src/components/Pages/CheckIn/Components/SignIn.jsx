@@ -2,14 +2,23 @@ import React from 'react';
 import {
   useNavigate
 } from 'react-router-dom';
-import { useContext, Context } from '../../context';
+import { useContext, Context } from '../../../../context';
+import { BACKEND_PORT } from '../../../../const';
+import Button from '@mui/material/Button';
+import './SignIn.css';
 
 function SignIn () {
   const [email, setEmail] = React.useState('');
   const [password, setPassword] = React.useState('');
-  const { getters, setters } = useContext(Context);
   const [valid, setValid] = React.useState(true);
+  const { setters } = useContext(Context);
   const navigate = useNavigate();
+
+  // useEffect(() => {
+  //   if (localStorage.getItem('token') != null) {
+  //     navigate('/dashboard')
+  //   }
+  // }, [])
 
   function resetAllValues () {
     setEmail('');
@@ -19,7 +28,7 @@ function SignIn () {
 
   async function register () {
     console.log('Signin.jsx the email and password sending to backend:', email, password);
-    const response = await fetch('http://localhost:5005/admin/auth/login', {
+    const response = await fetch(BACKEND_PORT + '/admin/auth/login', {
       method: 'POST',
       headers: {
         'Content-type': 'application/json',
@@ -30,29 +39,31 @@ function SignIn () {
       })
     });
     const data = await response.json();
-    console.log('Signin.jsx: the response data is', data);
     if (data.token) {
       localStorage.setItem('token', data.token);
       setters.setGToken(data.token);
       navigate('/dashboard')
-      console.log('Signin.jsx:gToken is', getters.gToken);
+      // console.log('Signin.jsx:gToken is', getters.gToken);
     } else {
       console.log('Signin.jsx: the response error is', data.error);
       setValid(false);
     }
   }
   return (
-    <div data-testid="testSignin">
-      Email: <input id="email" value ={email} onChange ={ (e) => setEmail(e.target.value)} /><br />
-      Password: <input id="password" value ={password} onChange ={ (e) => setPassword(e.target.value)} /> <br />
-      <button id="signUserIn" onClick={register}>Sign In</button> <br /> <br />
-      {!valid && <>
-        <div>
+    <div data-testid="testSignin" className='signin'>
+      <label htmlFor="email"> Email: </label>
+      <input id="email" value ={email} onChange ={ (e) => setEmail(e.target.value)} /><br />
+
+      <label htmlFor="password"> Password: </label>
+      <input id="password" value ={password} onChange ={ (e) => setPassword(e.target.value)} /> <br />
+
+      <Button variant="contained" id="signUserIn" onClick={register}>Sign In</Button> <br /> <br />
+
+      {!valid && <div className='popup'>
           Not Valid input, please try again <br />
-          <button onClick={resetAllValues} >clear and try again</button>
+          <Button variant="contained" onClick={resetAllValues} >clear and try again</Button>
         </div>
-      </>}
-      {/* <Link to="/dashboard" onClick={register}>sign In</Link> */}
+      }
     </div>
   )
 }
