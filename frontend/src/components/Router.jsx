@@ -1,7 +1,6 @@
 import React from 'react';
-import CheckIn from './Pages/CheckIn/CheckIn';
-import SignUp from './Pages/CheckIn/Components/SignUp';
-import Dashboard from './Pages/Dashboard/Dashboard';
+import CheckIn from './pages/CheckIn/CheckIn';
+import Dashboard from './pages/Dashboard/Dashboard';
 import QuizEdit from './QuizEdit';
 import PlayJoin from './PlayJoin';
 import QuestionEdit from './QuestionEdit';
@@ -38,7 +37,6 @@ function App () {
       <BrowserRouter>
         <Routes>
             (<Route path="/" element={ <CheckIn/>}/>)
-            (<Route path="/signUp" element={ <SignUp/> } />)
             (<Route path="/Dashboard" element={ <Dashboard/> } />)
             (<Route path="/QuizEdit" element={ <QuizEdit />}/>)
             (<Route path="/QuizEdit/:quizId" element={ <QuizEdit/>}/>)

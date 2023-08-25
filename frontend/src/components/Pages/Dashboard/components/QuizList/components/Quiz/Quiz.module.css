@@ -1,0 +1,13 @@
+.container {
+  background-color: #fff;
+  border: 1px rgba(0, 0, 0, 0.5) solid;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px 20px 20px;
+}
+
+.info {
+  max-width: calc(100% - 100px);
+}

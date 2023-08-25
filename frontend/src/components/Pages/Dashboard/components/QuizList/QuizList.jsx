@@ -1,13 +1,22 @@
 import React from 'react';
 import styles from './QuizList.module.css';
-import Quiz from './components/Quiz'
+import EmptyQuiz from './components/EmptyQuiz/EmptyQuiz';
+import Quiz from './components/Quiz/Quiz';
 
 const QuizList = ({
-  quizzesData
+  quizzesData,
+  setQuizzesData,
 }) => {
   return (
     <div className={styles.container}>
-      {quizzesData.map(quizData => <Quiz key={quizData.id} quizData={quizData} />)}
+      <EmptyQuiz setQuizzesData={setQuizzesData}/>
+      {quizzesData.map(quizData => (
+        <Quiz
+          key={quizData.id}
+          quizData={quizData}
+          setQuizzesData={setQuizzesData}
+        />
+      ))}
     </div>
   )
 }
