@@ -10,8 +10,8 @@ import './SignUp.css'
 function SignUp () {
   const [email, setEmail] = React.useState('');
   const [password, setPassword] = React.useState('');
-  const { setters } = useContext(Context);
   const [name, setName] = React.useState('');
+  const { setters } = useContext(Context);
   const navigate = useNavigate();
 
   async function register () {
@@ -39,9 +39,12 @@ function SignUp () {
   }
   return (
     <div className='signup'>
-      Email: <input id="email" value ={email} onChange ={ (e) => setEmail(e.target.value)} /><br />
-      Password: <input id="password" value ={password} onChange ={ (e) => setPassword(e.target.value)} /> <br />
-      Name: <input id="name" value ={name} onChange ={ (e) => setName(e.target.value)} /> <br />
+      <label htmlFor="email">Email: </label>
+      <input id="email" value ={email} onChange ={ (e) => setEmail(e.target.value)} /><br />
+      <label htmlFor="password">Password: </label>
+      <input id="password" value ={password} onChange ={ (e) => setPassword(e.target.value)} /> <br />
+      <label htmlFor="name">Name: </label>
+      <input id="name" value ={name} onChange ={ (e) => setName(e.target.value)} /> <br />
       <Button variant="contained" id="signUserUp" onClick={register}>Sign up</Button>
     </div>
   )

@@ -1,16 +1,9 @@
-import { useContext, Context } from '../context';
+import { BACKEND_PORT } from '../../const';
 
-async function APICall (path, PaMethod, payload) {
-  const { getters, setters } = useContext(Context);
-
-  let token = getters.gToken;
-  if (token === null || token === undefined) {
-    token = localStorage.getItem('token');
-    setters.setGToken(localStorage.getItem('token'));
-  }
-  console.log('APIcall: the token is:', token);
+async function APICall (path, method, payload) {
+  const token = localStorage.getItem('token');
   const option = {
-    method: PaMethod,
+    method: method,
     headers: {
       'Content-type': 'application/json',
       Authorization: `Bearer ${token}`,
@@ -19,9 +12,9 @@ async function APICall (path, PaMethod, payload) {
   if (payload !== null) {
     option.body = JSON.stringify(payload);
   }
-  const response = await fetch('http://localhost:5005' + path, option);
+  const response = await fetch(BACKEND_PORT + path, option);
   const data = await response.json();
-  console.log('the response data is:', data);
-  console.log('Dashboard.jsx/function createNewGame');
+  console.log('APICall.jsx :the response data is:', data);
+  return data;
 }
 export default APICall;

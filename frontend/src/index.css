@@ -3,3 +3,8 @@
 * {
   font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+
+* {
+  padding: 0;
+  margin: 0;
+}
