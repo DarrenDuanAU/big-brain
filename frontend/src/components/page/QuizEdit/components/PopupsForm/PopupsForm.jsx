@@ -8,25 +8,31 @@ import { v4 } from 'uuid';
 
 const PopupsForm = ({
   setShowPopups,
+  fetchedQuestions,
+  setFullQuizData
 }) => {
+  const choiceIndex = ['A', 'B', 'C', 'D']
   const [questionInfo, setQuestionInfo] = useState({
     id: '',
     str: '',
     time: '',
     type: '',
     point: '',
+    choice: ['', '', '', ''],
   });
   const params = useParams();
 
   const addQuestion = async () => {
     const randomId = v4();
     const questions = [
+      ...fetchedQuestions,
       {
         id: randomId,
         str: questionInfo.str,
         time: questionInfo.time,
-        type: '',
+        type: questionInfo.type,
         point: questionInfo.point,
+        choice: questionInfo.choice,
       }
     ];
 
@@ -34,8 +40,9 @@ const PopupsForm = ({
       questions
     });
     if (res) {
-      // const data = await APICall('/admin/quiz', 'GET', null);
       setShowPopups(false);
+      const temp = await APICall('/admin/quiz/' + params.quizId, 'GET', null)
+      setFullQuizData(temp)
     }
   };
 
@@ -55,8 +62,7 @@ const PopupsForm = ({
           <div className={styles.form}>
             <label htmlFor='question-str'>Question: </label>
             <input
-              type="text"
-              name='question-str'
+              type="text" name='question-str'
               value={questionInfo.str}
               onChange={(e) => {
                 setQuestionInfo({
@@ -67,8 +73,7 @@ const PopupsForm = ({
             />
             <label htmlFor='question-time'>Time Limit(s): </label>
             <input
-              type="text"
-              name='question-time'
+              type="text" name='question-time'
               value={questionInfo.time}
               onChange={(e) => {
                 setQuestionInfo({
@@ -79,8 +84,7 @@ const PopupsForm = ({
             />
             <label htmlFor='question-point'>Points: </label>
             <input
-              type="text"
-              name='question-point'
+              type="text" name='question-point'
               value={questionInfo.point}
               onChange={(e) => {
                 setQuestionInfo({
@@ -89,7 +93,53 @@ const PopupsForm = ({
                 });
               }}
             />
-            {/* <input type="radio" value /> */}
+            <p>Question type:</p>
+            <div className={styles.types}>
+              <div className={styles.type}>
+                <input
+                  type="radio" name='type' id='single'
+                  value='single' checked={questionInfo.type === 'single'}
+                  onChange={(e) =>
+                    setQuestionInfo({
+                      ...questionInfo,
+                      type: e.target.value
+                    })
+                  }
+                />
+                <label htmlFor="single">single</label>
+              </div>
+              <div className={styles.type}>
+                <input type="radio" name='type' id='multiple'
+                  value='multiple' checked={questionInfo.type === 'multiple'}
+                  onChange={(e) =>
+                    setQuestionInfo({
+                      ...questionInfo,
+                      type: e.target.value
+                    })
+                  }
+                />
+                <label htmlFor="multiple">multiple</label>
+              </div>
+            </div>
+
+            {choiceIndex.map((value, index) =>
+              <div key={index} className={styles.choice}>
+                <label htmlFor='choice1'>{value}.  </label>
+                <input
+                  type="text" name='choice1'
+                  value={questionInfo.choice[index]}
+                  onChange={(e) => {
+                    const updatedChoice = [...questionInfo.choice];
+                    updatedChoice[index] = e.target.value;
+                    setQuestionInfo({
+                      ...questionInfo,
+                      choice: updatedChoice
+                    });
+                  }}
+                />
+              </div>
+            )}
+
             <Button variant='outlined' onClick={addQuestion}>
               create
             </Button>

@@ -19,7 +19,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 400px;
-  height: 300px;
+  height: 500px;
   border-radius: 10px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
   background-color: #fff;
@@ -55,10 +55,10 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 200px;
+  height: 440px;
   width: 300px;
   /* background-color: yellow; */
-  margin-top: 0;
+  margin-top: 30px;
 }
 
 input {
@@ -66,4 +66,31 @@ input {
   width: 80%;
   border: 1px rgba(0, 0, 0, 0.3) solid;
   border-radius: 5px;
+}
+
+.types {
+  width: 180px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.type {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.type > input {
+  margin: 0 5px;
+}
+
+.choice {
+  width: 100%;
+  /* background-color: red; */
+}
+
+.choice > label {
+  width: 30px;
 }
