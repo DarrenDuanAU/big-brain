@@ -1,7 +1,7 @@
 import React from 'react';
-import CheckIn from './pages/CheckIn/CheckIn';
-import Dashboard from './pages/Dashboard/Dashboard';
-import QuizEdit from './QuizEdit';
+import CheckIn from './page/CheckIn/CheckIn';
+import Dashboard from './page/Dashboard/Dashboard';
+import QuizEdit from './page/QuizEdit/QuizEdit';
 import PlayJoin from './PlayJoin';
 import QuestionEdit from './QuestionEdit';
 import Result from './Result';
@@ -38,7 +38,7 @@ function App () {
         <Routes>
             (<Route path="/" element={ <CheckIn/>}/>)
             (<Route path="/Dashboard" element={ <Dashboard/> } />)
-            (<Route path="/QuizEdit" element={ <QuizEdit />}/>)
+            {/* (<Route path="/QuizEdit" element={ <QuizEdit />}/>) */}
             (<Route path="/QuizEdit/:quizId" element={ <QuizEdit/>}/>)
             (<Route path="/QuizEdit/:quizId/QuestionEdit/:questionId" element={ <QuestionEdit/>}/>)
             (<Route path="/Result/:sessionId" element={ <Result/>} />)

@@ -17,6 +17,7 @@ const EmptyQuiz = ({
     if (res) {
       const data = await APICall('/admin/quiz', 'GET', null);
       setShowNewQuizForm(false);
+      setQuizName('')
       setQuizzesData(data.quizzes);
     }
   }
@@ -38,7 +39,6 @@ const EmptyQuiz = ({
               <Button
                 variant='outlined' onClick={() => {
                   setShowNewQuizForm(false)
-                  console.log('ye')
                 }}>
                   cancel
               </Button>

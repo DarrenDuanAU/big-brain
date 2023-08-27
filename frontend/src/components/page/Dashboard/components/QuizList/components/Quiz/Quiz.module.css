@@ -11,3 +11,10 @@
 .info {
   max-width: calc(100% - 100px);
 }
+
+.buttons {
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

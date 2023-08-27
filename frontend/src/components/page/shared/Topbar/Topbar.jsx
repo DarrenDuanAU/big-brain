@@ -2,7 +2,7 @@ import React from 'react';
 import {
   Link
 } from 'react-router-dom';
-import { useContext, Context } from '../../../../../context';
+import { useContext, Context } from '../../../../context';
 import styles from './Topbar.module.css';
 import Button from '@mui/material/Button';
 
@@ -18,7 +18,9 @@ const Topbar = () => {
   return (
     <nav className={styles.container}>
       <Link id="logout" to="/" onClick ={ logout }>
-        <Button variant="contained">Logout</Button>
+        <div className={styles.buttons}>
+          <Button variant="contained">Logout</Button>
+        </div>
       </Link>
     </nav>
   )

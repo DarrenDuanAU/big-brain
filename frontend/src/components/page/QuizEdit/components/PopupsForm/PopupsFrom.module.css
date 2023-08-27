@@ -18,8 +18,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 300px;
-  height: 200px;
+  width: 400px;
+  height: 300px;
   border-radius: 10px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
   background-color: #fff;
@@ -55,10 +55,10 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 120px;
+  height: 200px;
   width: 300px;
   /* background-color: yellow; */
-  margin-top: 20px;
+  margin-top: 0;
 }
 
 input {

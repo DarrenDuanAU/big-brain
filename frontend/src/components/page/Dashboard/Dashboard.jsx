@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import QuizList from './components/QuizList/QuizList';
-import Topbar from './components/Topbar/Topbar';
+import Topbar from '../shared/Topbar/Topbar';
 import styles from './Dashboard.module.css';
 import APICall from '../../apis/APICall';
 
