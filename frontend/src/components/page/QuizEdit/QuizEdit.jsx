@@ -8,6 +8,7 @@ import Topbar from '../shared/Topbar/Topbar';
 import styles from './QuizEdit.module.css';
 import Button from '@mui/material/Button';
 import PopupsForm from './components/PopupsForm/PopupsForm';
+import QuestionList from './components/QuestionList/QuestionList';
 function QuizEdit () {
   const [fullQuizData, setFullQuizData] = useState(null);
   const [showPopups, setShowPopups] = useState(false);
@@ -36,6 +37,7 @@ function QuizEdit () {
         <br /> QuizEdit <br />
         <Button variant='contained' onClick={() => setShowPopups(true)}>add New Question</Button>
       </div>
+      <QuestionList fullQuizData={fullQuizData} />
     </div>
   )
 }
