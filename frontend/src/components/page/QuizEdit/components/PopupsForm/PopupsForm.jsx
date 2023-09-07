@@ -11,7 +11,7 @@ const PopupsForm = ({
   fetchedQuestions,
   setFullQuizData
 }) => {
-  const choiceIndex = ['A', 'B', 'C', 'D']
+  const choiceIndex = ['A', 'B', 'C', 'D'];
   const [questionInfo, setQuestionInfo] = useState({
     id: '',
     str: '',
@@ -19,6 +19,7 @@ const PopupsForm = ({
     type: '',
     point: '',
     choice: ['', '', '', ''],
+    answer: [false, false, false, false],
   });
   const params = useParams();
 
@@ -33,6 +34,7 @@ const PopupsForm = ({
         type: questionInfo.type,
         point: questionInfo.point,
         choice: questionInfo.choice,
+        answer: questionInfo.answer,
       }
     ];
 
@@ -62,7 +64,7 @@ const PopupsForm = ({
           <div className={styles.form}>
             <label htmlFor='question-str'>Question: </label>
             <input
-              type="text" name='question-str'
+              type="text" name='question-str' autoComplete='off'
               value={questionInfo.str}
               onChange={(e) => {
                 setQuestionInfo({
@@ -73,7 +75,7 @@ const PopupsForm = ({
             />
             <label htmlFor='question-time'>Time Limit(s): </label>
             <input
-              type="text" name='question-time'
+              type="text" name='question-time' autoComplete='off'
               value={questionInfo.time}
               onChange={(e) => {
                 setQuestionInfo({
@@ -84,7 +86,7 @@ const PopupsForm = ({
             />
             <label htmlFor='question-point'>Points: </label>
             <input
-              type="text" name='question-point'
+              type="text" name='question-point' autoComplete='off'
               value={questionInfo.point}
               onChange={(e) => {
                 setQuestionInfo({
@@ -97,7 +99,7 @@ const PopupsForm = ({
             <div className={styles.types}>
               <div className={styles.type}>
                 <input
-                  type="radio" name='type' id='single'
+                  type="radio" name='type' id='single' autoComplete='off'
                   value='single' checked={questionInfo.type === 'single'}
                   onChange={(e) =>
                     setQuestionInfo({
@@ -109,7 +111,7 @@ const PopupsForm = ({
                 <label htmlFor="single">single</label>
               </div>
               <div className={styles.type}>
-                <input type="radio" name='type' id='multiple'
+                <input type="radio" name='type' id='multiple' autoComplete='off'
                   value='multiple' checked={questionInfo.type === 'multiple'}
                   onChange={(e) =>
                     setQuestionInfo({
@@ -124,9 +126,9 @@ const PopupsForm = ({
 
             {choiceIndex.map((value, index) =>
               <div key={index} className={styles.choice}>
-                <label htmlFor='choice1'>{value}.  </label>
+                <label htmlFor='choice'>{value}.  </label>
                 <input
-                  type="text" name='choice1'
+                  type="text" name='choice' autoComplete='off'
                   value={questionInfo.choice[index]}
                   onChange={(e) => {
                     const updatedChoice = [...questionInfo.choice];
@@ -137,6 +139,19 @@ const PopupsForm = ({
                     });
                   }}
                 />
+                <div className={styles.checkBox}>
+                  <input type="checkbox"
+                    value={questionInfo.answer[index]}
+                    onChange={() => {
+                      const updatedAnswer = [...questionInfo.answer];
+                      updatedAnswer[index] = !updatedAnswer[index];
+                      setQuestionInfo({
+                        ...questionInfo,
+                        answer: updatedAnswer
+                      })
+                    }}
+                  />
+                </div>
               </div>
             )}
 
@@ -145,7 +160,6 @@ const PopupsForm = ({
             </Button>
           </div>
         </form>
-        {/* <p>popups!!</p> */}
       </div>
     </>
   );

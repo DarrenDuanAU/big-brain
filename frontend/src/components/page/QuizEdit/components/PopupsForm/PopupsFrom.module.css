@@ -88,9 +88,14 @@ input {
 
 .choice {
   width: 100%;
+  display: flex;
   /* background-color: red; */
 }
 
 .choice > label {
   width: 30px;
+}
+.choice .checkBox {
+  width: 20px;
+  margin-left: 10px;
 }
