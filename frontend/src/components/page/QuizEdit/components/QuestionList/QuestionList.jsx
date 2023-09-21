@@ -1,20 +1,32 @@
 import React from 'react'
+import styles from './QuestionList.module.css';
+
 const QuestionList = ({
   fullQuizData
 }) => {
   return (
-    <div>
-      {fullQuizData?.questions?.map((question, index) => (
-        <div key={index}>
-          {/* Question ID: {question.id} <br /> */}
-          Question: {question.str} <br />
-          Question Points: {question.point} <br />
-          Question Time Limits: {question.time} <br />
-          Question choice: {question.choice} <br />
-          <br />
-          <hr />
-        </div>
-      ))}
+    <div className={styles.pageWrapper}>
+      <table>
+        <thead>
+          <tr className={styles.tableHeaderRow}>
+            <th className={styles.colOne}>Question</th>
+            <th className={styles.colTwo}>Points</th>
+            <th className={styles.colThree}>Time Limit</th>
+            <th className={styles.colFour}>Choices</th>
+          </tr>
+        </thead>
+        <tbody>
+          {fullQuizData?.questions?.map((question, index) => (
+          <tr key={index} className={styles.tableRow}>
+            <td className={styles.colOne} >{question.str}</td>
+            <td className={styles.colTwo}>{question.point} </td>
+            <td className={styles.colThree}>{question.time} </td>
+            <td className={styles.colFour} >{question.choice}</td>
+          </tr>
+          ))}
+        </tbody>
+
+      </table>
     </div>
   )
 }

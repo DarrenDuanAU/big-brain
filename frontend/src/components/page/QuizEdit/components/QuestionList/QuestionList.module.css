@@ -1,0 +1,34 @@
+.pageWrapper {
+    width: 100%;
+    min-width: 500px;
+    background-color: lightblue;
+}
+
+table {
+    width: 100%;
+}
+
+.tableHeaderRow {
+    width: 100%;
+    background-color: red;
+}
+
+.tableRow {
+    width: 100%;
+}
+
+.colOne {
+    width: 40%;
+}
+
+.colTwo {
+    width: 10%;
+}
+
+.colThree {
+    width: 10%;
+}
+
+.colFour {
+    width: 40%;
+}

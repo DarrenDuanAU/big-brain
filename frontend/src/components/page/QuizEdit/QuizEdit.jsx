@@ -9,6 +9,7 @@ import styles from './QuizEdit.module.css';
 import Button from '@mui/material/Button';
 import PopupsForm from './components/PopupsForm/PopupsForm';
 import QuestionList from './components/QuestionList/QuestionList';
+
 function QuizEdit () {
   const [fullQuizData, setFullQuizData] = useState(null);
   const [showPopups, setShowPopups] = useState(false);
@@ -26,18 +27,22 @@ function QuizEdit () {
   }
 
   return (
-    <div>
+    <div className={styles.pageWrapper}>
       <Topbar />
+      <div className={styles.contentWrapper}>
+        <div className={styles.buttonsContainer}>
+          <Button variant='contained' onClick={() => navigate('/dashboard')}>to dashboard</Button>
+          <Button variant='contained' onClick={() => setShowPopups(true)}>add New Question</Button>
+        </div>
+        <div className={styles.tableWrapper}>
+          <QuestionList fullQuizData={fullQuizData} />
+        </div>
+      </div>
+
       {showPopups && <PopupsForm
         setShowPopups={setShowPopups}
         fetchedQuestions={fullQuizData.questions}
-        setFullQuizData={setFullQuizData}/>}
-      <div className={styles.container}>
-      <Button variant='contained' onClick={() => navigate('/dashboard')}>to dashboard</Button>
-        <br /> QuizEdit <br />
-        <Button variant='contained' onClick={() => setShowPopups(true)}>add New Question</Button>
-      </div>
-      <QuestionList fullQuizData={fullQuizData} />
+        setFullQuizData={setFullQuizData} />}
     </div>
   )
 }
