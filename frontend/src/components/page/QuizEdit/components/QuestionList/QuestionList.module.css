@@ -1,11 +1,13 @@
 .pageWrapper {
     width: 100%;
     min-width: 500px;
+    min-height: 400px;
     background-color: lightblue;
 }
 
 table {
     width: 100%;
+    height: 100%;
 }
 
 .tableHeaderRow {
@@ -15,6 +17,8 @@ table {
 
 .tableRow {
     width: 100%;
+    height: 30px;
+    border-bottom: solid 1px #000;
 }
 
 .colOne {
