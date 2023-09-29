@@ -21,7 +21,7 @@ const QuestionList = ({
             <td className={styles.colOne} >{question.str}</td>
             <td className={styles.colTwo}>{question.point} </td>
             <td className={styles.colThree}>{question.time} </td>
-            <td className={styles.colFour} >{question.choice}</td>
+            <td className={styles.colFour} >{question.choice.reduce((totalChoice, item) => totalChoice + '/' + item, '')}</td>
           </tr>
           ))}
         </tbody>
