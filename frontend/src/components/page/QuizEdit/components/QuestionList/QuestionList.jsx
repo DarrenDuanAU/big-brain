@@ -12,7 +12,7 @@ const QuestionList = ({
     }
   }
   return (
-    <div className={styles.tableWrapper}>
+    <div className={styles.pageWrapper}>
       <table>
         <thead>
           <tr className={styles.tableHeaderRow}>

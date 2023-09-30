@@ -1,6 +1,8 @@
 .pageWrapper {
   /* background-color: yellow; */
-  margin-top: 100px;
+  padding-top: 100px;
+  background-color: #fafafa;
+  min-height: calc(100vh - 100px);
 }
 
 .buttonsContainer {
@@ -10,4 +12,5 @@
 .tableWrapper {
   width: 80%;
   margin: 20px auto auto 10%;
+  padding-bottom: 100px;
 }

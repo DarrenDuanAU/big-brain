@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import {
   useParams,
-  useNavigate
+  // useNavigate
 } from 'react-router-dom';
 import APICall from '../../apis/APICall';
 import Topbar from '../shared/Topbar/Topbar';
@@ -15,7 +15,7 @@ function QuizEdit () {
   const [fullQuizData, setFullQuizData] = useState(null);
   const [showPopups, setShowPopups] = useState(false);
   const params = useParams();
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   useEffect(() => {
     // console.log(params.quizId)
@@ -32,7 +32,6 @@ function QuizEdit () {
       <Topbar />
       <div className={styles.contentWrapper}>
         <div className={styles.buttonsContainer}>
-          <Button variant='contained' onClick={() => navigate('/dashboard')}>to dashboard</Button>
           <Button variant='contained' onClick={() => setShowPopups(true)}>add New Question</Button>
         </div>
         <div className={styles.tableWrapper}>

@@ -14,9 +14,10 @@ import {
   Route,
 } from 'react-router-dom';
 import { useContext, Context } from '../context';
+// import Topbar from './page/shared/Topbar/Topbar';
 // import Quiz from './Quiz';
 
-function App () {
+function Router () {
   const { getters, setters } = useContext(Context);
 
   // function logout () {
@@ -28,7 +29,7 @@ function App () {
   React.useEffect(() => {
     if (localStorage.getItem('token') && getters.gToken === null) {
       setters.setGToken(localStorage.getItem('token'));
-      console.log('App.jsx: (gToken is null && localstorage(token) !== null) => set the localstorage token to gToken!!!');
+      console.log('Router.jsx: (gToken is null && localstorage(token) !== null) => set the localstorage token to gToken!!!');
     }
   }, []);
 
@@ -53,4 +54,4 @@ function App () {
   );
 }
 
-export default App;
+export default Router;
