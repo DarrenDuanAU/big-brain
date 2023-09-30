@@ -9,6 +9,7 @@ import styles from './QuizEdit.module.css';
 import Button from '@mui/material/Button';
 import PopupsForm from './components/PopupsForm/PopupsForm';
 import QuestionList from './components/QuestionList/QuestionList';
+// import QuestionTable from './components/QuestionTable/QuestionTable';
 
 function QuizEdit () {
   const [fullQuizData, setFullQuizData] = useState(null);
@@ -37,6 +38,9 @@ function QuizEdit () {
         <div className={styles.tableWrapper}>
           <QuestionList fullQuizData={fullQuizData} />
         </div>
+        {/* <div className={styles.tableWrapper}>
+        <QuestionTable fullQuizData={fullQuizData} />
+        </div> */}
       </div>
 
       {showPopups && <PopupsForm

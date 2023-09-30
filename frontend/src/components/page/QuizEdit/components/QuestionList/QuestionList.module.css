@@ -1,24 +1,32 @@
-.pageWrapper {
+.tableWrapper {
     width: 100%;
     min-width: 500px;
     min-height: 400px;
-    background-color: lightblue;
+    /* background-color: lightblue; */
+    border-radius: 5px;
+    border: solid 1px #999;
 }
 
-table {
+table{
     width: 100%;
     height: 100%;
+    border-collapse: collapse;
 }
 
-.tableHeaderRow {
+tr {
     width: 100%;
-    background-color: red;
+    height: 50px;
+    border-bottom: solid 1px #999;
 }
 
-.tableRow {
-    width: 100%;
-    height: 30px;
-    border-bottom: solid 1px #000;
+th {
+    border: solid 1px #999;
+}
+
+td {
+    /* padding-left: 10px; */
+    text-align: center;
+    /* border: solid 1px #999; */
 }
 
 .colOne {
@@ -26,13 +34,17 @@ table {
 }
 
 .colTwo {
-    width: 10%;
+    width: 8%;
 }
 
 .colThree {
-    width: 10%;
+    width: 7%;
 }
 
 .colFour {
-    width: 40%;
+    width: 35%;
+}
+
+.colFive {
+    width: 10%;
 }
