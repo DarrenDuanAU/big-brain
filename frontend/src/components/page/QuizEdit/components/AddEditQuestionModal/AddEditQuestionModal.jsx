@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import styles from './PopupsFrom.module.css';
+import styles from './AddEditQuestionModal.module.css';
 import Button from '@mui/material/Button';
-import APICall from '../../.././../apis/APICall';
+import APICall from '../../../../apis/APICall';
 import Icon from '@mui/material/Icon';
 import { useParams } from 'react-router-dom';
 import { v4 } from 'uuid';
 
-const PopupsForm = ({
+const AddEditQuestionModal = ({
   setShowPopups,
   fetchedQuestions,
   setFullQuizData
@@ -165,4 +165,4 @@ const PopupsForm = ({
   );
 };
 
-export default PopupsForm;
+export default AddEditQuestionModal;

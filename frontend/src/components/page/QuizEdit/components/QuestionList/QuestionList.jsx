@@ -2,7 +2,8 @@ import React from 'react'
 import styles from './QuestionList.module.css';
 
 const QuestionList = ({
-  fullQuizData
+  fullQuizData,
+  setShowPopups
 }) => {
   const numberToChar = (number) => {
     if (number >= 0 && number <= 25) {
@@ -21,6 +22,7 @@ const QuestionList = ({
             <th className={styles.colThree}>Time&nbsp;(s)</th>
             <th className={styles.colFour}>Choices</th>
             <th className={styles.colFive}>Answers</th>
+            <th className={styles.colSix}>Action</th>
           </tr>
         </thead>
         <tbody>
@@ -42,6 +44,9 @@ const QuestionList = ({
               return null
             }).filter((choice) => choice != null).join('/')
             }</td>
+            <td className={styles.colSix}>
+              <button onClick={() => setShowPopups(true)}>edit</button>
+            </td>
           </tr>
           ))}
         </tbody>

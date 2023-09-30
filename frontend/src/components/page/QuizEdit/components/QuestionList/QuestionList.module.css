@@ -6,6 +6,7 @@
     border-radius: 5px;
     border: solid 1px #999;
     background-color: #fff;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
 }
 
 table{
@@ -47,5 +48,9 @@ td {
 }
 
 .colFive {
+    width: 10%;
+}
+
+.colSix {
     width: 10%;
 }

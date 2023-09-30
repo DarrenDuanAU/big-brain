@@ -7,9 +7,8 @@ import APICall from '../../apis/APICall';
 import Topbar from '../shared/Topbar/Topbar';
 import styles from './QuizEdit.module.css';
 import Button from '@mui/material/Button';
-import PopupsForm from './components/PopupsForm/PopupsForm';
+import AddEditQuestionModal from './components/AddEditQuestionModal/AddEditQuestionModal';
 import QuestionList from './components/QuestionList/QuestionList';
-// import QuestionTable from './components/QuestionTable/QuestionTable';
 
 function QuizEdit () {
   const [fullQuizData, setFullQuizData] = useState(null);
@@ -35,14 +34,15 @@ function QuizEdit () {
           <Button variant='contained' onClick={() => setShowPopups(true)}>add New Question</Button>
         </div>
         <div className={styles.tableWrapper}>
-          <QuestionList fullQuizData={fullQuizData} />
+          <QuestionList fullQuizData={fullQuizData} setShowPopups={setShowPopups}/>
         </div>
-        {/* <div className={styles.tableWrapper}>
-        <QuestionTable fullQuizData={fullQuizData} />
-        </div> */}
       </div>
 
-      {showPopups && <PopupsForm
+      {/* {showPopups && <PopupsForm
+        setShowPopups={setShowPopups}
+        fetchedQuestions={fullQuizData.questions}
+        setFullQuizData={setFullQuizData} />} */}
+      {showPopups && <AddEditQuestionModal
         setShowPopups={setShowPopups}
         fetchedQuestions={fullQuizData.questions}
         setFullQuizData={setFullQuizData} />}
