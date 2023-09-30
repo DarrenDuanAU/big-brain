@@ -24,7 +24,7 @@ const Quiz = ({
     navigate('/QuizEdit/' + quizData.id)
   }
   return (
-    <div className={styles.container}>
+    <div className={styles.pageWrapper}>
       <div className={styles.info}>
         Quiz Name: {quizData.name} <br />
         Quiz ID: {quizData.id} <br />

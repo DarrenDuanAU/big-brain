@@ -1,4 +1,4 @@
-.container {
+.pageWrapper {
   background-color: #fff;
   min-height: 120px;
   border: 2px rgba(0, 0, 0, 0.5) dashed;
@@ -9,6 +9,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.pageWrapper:hover {
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 8px 0 rgba(0, 0, 0, 0.19);
 }
 
 .container:hover {

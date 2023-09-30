@@ -29,7 +29,7 @@ const EmptyQuiz = ({
   }
 
   return (
-    <div className={styles.container} onClick={clickCard}>
+    <div className={styles.pageWrapper} onClick={clickCard}>
       {showNewQuizForm === true
         ? <div className={styles.form}>
             <label htmlFor='quizname'>Quiz name: </label>
