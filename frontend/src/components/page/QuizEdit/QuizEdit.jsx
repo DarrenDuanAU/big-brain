@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import {
   useParams,
-  // useNavigate
 } from 'react-router-dom';
 import APICall from '../../apis/APICall';
 import Topbar from '../shared/Topbar/Topbar';
@@ -14,16 +13,14 @@ function QuizEdit () {
   const [fullQuizData, setFullQuizData] = useState(null);
   const [showPopups, setShowPopups] = useState(false);
   const params = useParams();
-  // const navigate = useNavigate();
 
   useEffect(() => {
-    // console.log(params.quizId)
     fetchData();
   }, [])
 
   const fetchData = async () => {
-    const temp = await APICall('/admin/quiz/' + params.quizId, 'GET', null)
-    setFullQuizData(temp)
+    const res = await APICall('/admin/quiz/' + params.quizId, 'GET', null)
+    setFullQuizData(res)
   }
 
   return (
@@ -38,10 +35,6 @@ function QuizEdit () {
         </div>
       </div>
 
-      {/* {showPopups && <PopupsForm
-        setShowPopups={setShowPopups}
-        fetchedQuestions={fullQuizData.questions}
-        setFullQuizData={setFullQuizData} />} */}
       {showPopups && <AddEditQuestionModal
         setShowPopups={setShowPopups}
         fetchedQuestions={fullQuizData.questions}

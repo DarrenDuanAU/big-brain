@@ -44,7 +44,7 @@ const AddEditQuestionModal = ({
     if (res) {
       setShowPopups(false);
       const temp = await APICall('/admin/quiz/' + params.quizId, 'GET', null)
-      setFullQuizData(temp)
+      setFullQuizData(temp);
     }
   };
 

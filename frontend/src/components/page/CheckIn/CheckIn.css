@@ -10,7 +10,8 @@
 .checkin > .container {
   width: calc(300px + 10vw);
   height: 500px;
-  border: 1px #999 solid;
+  border: 0.5px #999 solid;
+  box-shadow: 0 3px 5px 0 rgba(255, 232, 232, 0.2), 0 4px 12px 0 rgba(0, 0, 0, 0.19);
   border-radius: 20px;
   display: flex;
   flex-direction: column;

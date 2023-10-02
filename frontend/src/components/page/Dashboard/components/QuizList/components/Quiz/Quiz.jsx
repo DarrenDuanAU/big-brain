@@ -26,9 +26,11 @@ const Quiz = ({
   return (
     <div className={styles.pageWrapper}>
       <div className={styles.info}>
-        Quiz Name: {quizData.name} <br />
-        Quiz ID: {quizData.id} <br />
-        Quiz Created at: {quizData.createdAt} <br />
+        {/* Quiz ID: {quizData.id} <br /> */}
+        <p className={styles.infoTitle}>Quiz Name: <br /></p>
+        <p className={styles.infoQuizName}> {quizData.name} <br /></p>
+        <p className={styles.infoDateTime}>{quizData.createdAt.split('T')[1].slice(0, 8) + ' / ' + quizData.createdAt.split('T')[0]} <br /></p>
+
       </div>
       <div className={styles.buttons}>
         <Button variant='outlined' onClick={editQuiz}>edit</Button>

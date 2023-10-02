@@ -1,3 +1,13 @@
+# Demo
+
+signin
+![alt text](https://github.com/DarrenDuanAU/big-brain/blob/main/demo-images/signin-demo.png)
+
+dashboard
+![alt text](https://github.com/DarrenDuanAU/big-brain/blob/main/demo-images/dashboard-demo.png)
+
+
+
 # Assessment 4 - ReactJS: BigBrain
 
 1. Background & Motivation

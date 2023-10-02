@@ -14,6 +14,23 @@
 
 .info {
   max-width: calc(100% - 100px);
+  height: 100px;
+}
+
+.infoTitle {
+  font-size: 12px;
+  height: 20px;
+}
+
+.infoQuizName {
+  font-size: 18px;
+  height: 60px;
+  padding: 5px 0 5px 10px;
+}
+
+.infoDateTime {
+  font-size: 10px;
+  height: 10px;
 }
 
 .buttons {
