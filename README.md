@@ -1,7 +1,7 @@
 # Demo
 
 - designed the UI and user flow
-- build project from scratch with React.js, module.css
+- build project from scratch with React.js, module.css, MUI
 - interact with backend REATful APIs
 
 signin:
