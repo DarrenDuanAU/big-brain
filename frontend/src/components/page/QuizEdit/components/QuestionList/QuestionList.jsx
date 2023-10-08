@@ -1,10 +1,13 @@
 import React from 'react'
 import styles from './QuestionList.module.css';
+import APICall from '../../../../apis/APICall';
 
 const QuestionList = ({
   setTargetQuestion,
   fullQuizData,
-  setShowAddEditQuestionModal
+  setFullQuizData,
+  setShowAddEditQuestionModal,
+  params
 }) => {
   const numberToChar = (number) => {
     if (number >= 0 && number <= 25) {
@@ -18,6 +21,17 @@ const QuestionList = ({
     setTargetQuestion(question);
     setShowAddEditQuestionModal(true);
   }
+
+  const deleteQuestionHandler = async (targetId) => {
+    const questions = fullQuizData?.questions?.filter(question => question.id !== targetId);
+    const res = await APICall('/admin/quiz/' + params.quizId, 'PUT', {
+      questions
+    });
+    if (res) {
+      const temp = await APICall('/admin/quiz/' + params.quizId, 'GET', null)
+      setFullQuizData(temp);
+    }
+  };
 
   return (
     <div className={styles.pageWrapper}>
@@ -53,6 +67,7 @@ const QuestionList = ({
             }</td>
             <td className={styles.colSix}>
               <button onClick={() => { editQuestionHandler(question) }}>edit</button>
+              <button onClick={() => { deleteQuestionHandler(question.id) }}>delete</button>
             </td>
           </tr>
           ))}

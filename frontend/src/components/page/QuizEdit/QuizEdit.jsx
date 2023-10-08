@@ -41,6 +41,8 @@ function QuizEdit () {
             setTargetQuestion ={setTargetQuestion}
             fullQuizData={fullQuizData}
             setShowAddEditQuestionModal={setShowAddEditQuestionModal}
+            setFullQuizData={setFullQuizData}
+            params={params}
           />
         </div>
       </div>
