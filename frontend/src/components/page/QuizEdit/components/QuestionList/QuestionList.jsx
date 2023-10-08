@@ -2,8 +2,9 @@ import React from 'react'
 import styles from './QuestionList.module.css';
 
 const QuestionList = ({
+  setTargetQuestion,
   fullQuizData,
-  setShowPopups
+  setShowAddEditQuestionModal
 }) => {
   const numberToChar = (number) => {
     if (number >= 0 && number <= 25) {
@@ -12,6 +13,12 @@ const QuestionList = ({
       return null;
     }
   }
+
+  const editQuestionHandler = (question) => {
+    setTargetQuestion(question);
+    setShowAddEditQuestionModal(true);
+  }
+
   return (
     <div className={styles.pageWrapper}>
       <table>
@@ -45,7 +52,7 @@ const QuestionList = ({
             }).filter((choice) => choice != null).join('/')
             }</td>
             <td className={styles.colSix}>
-              <button onClick={() => setShowPopups(true)}>edit</button>
+              <button onClick={() => { editQuestionHandler(question) }}>edit</button>
             </td>
           </tr>
           ))}

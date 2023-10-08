@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import styles from './EditQuestionModal.module.css';
+import React, { useEffect, useState } from 'react';
+import styles from './AddEditQuestionModal.module.css';
 import Button from '@mui/material/Button';
 import APICall from '../../../../apis/APICall';
 import Icon from '@mui/material/Icon';
@@ -7,6 +7,7 @@ import { useParams } from 'react-router-dom';
 import { v4 } from 'uuid';
 
 const AddEditQuestionModal = ({
+  targetQuestion,
   setVisible,
   fetchedQuestions,
   setFullQuizData
@@ -23,7 +24,21 @@ const AddEditQuestionModal = ({
   });
   const params = useParams();
 
-  const addQuestion = async () => {
+  useEffect(() => {
+    if (targetQuestion !== null) {
+      setQuestionInfo({
+        id: targetQuestion.id,
+        str: targetQuestion.str,
+        time: targetQuestion.time,
+        type: targetQuestion.type,
+        point: targetQuestion.point,
+        choice: targetQuestion.choice,
+        answer: targetQuestion.answer,
+      })
+    }
+  }, [])
+
+  const addQeustion = async () => {
     const randomId = v4();
     const questions = [
       ...fetchedQuestions,
@@ -37,7 +52,30 @@ const AddEditQuestionModal = ({
         answer: questionInfo.answer,
       }
     ];
+    const res = await APICall('/admin/quiz/' + params.quizId, 'PUT', {
+      questions
+    });
+    if (res) {
+      setVisible(false);
+      const temp = await APICall('/admin/quiz/' + params.quizId, 'GET', null)
+      setFullQuizData(temp);
+    }
+  };
 
+  const updateEditQuestion = async () => {
+    const filteredQuestion = fetchedQuestions.filter(question => question.id !== targetQuestion.id);
+    const questions = [
+      ...filteredQuestion,
+      {
+        id: questionInfo.id,
+        str: questionInfo.str,
+        time: questionInfo.time,
+        type: questionInfo.type,
+        point: questionInfo.point,
+        choice: questionInfo.choice,
+        answer: questionInfo.answer,
+      }
+    ];
     const res = await APICall('/admin/quiz/' + params.quizId, 'PUT', {
       questions
     });
@@ -155,9 +193,10 @@ const AddEditQuestionModal = ({
               </div>
             )}
 
-            <Button variant='outlined' onClick={addQuestion}>
-              create
-            </Button>
+            {targetQuestion === null
+              ? <Button variant='outlined' onClick={addQeustion}>create</Button>
+              : <Button variant='outlined' onClick={updateEditQuestion}>Edit</Button>
+            }
           </div>
         </form>
       </div>
