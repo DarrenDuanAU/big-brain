@@ -111,17 +111,6 @@ const AddEditQuestionModal = ({
                 });
               }}
             />
-            <label htmlFor='question-time'>Time Limit(s): </label>
-            <input
-              type="text" name='question-time' autoComplete='off'
-              value={questionInfo.time}
-              onChange={(e) => {
-                setQuestionInfo({
-                  ...questionInfo,
-                  time: e.target.value
-                });
-              }}
-            />
             <label htmlFor='question-point'>Points: </label>
             <input
               type="text" name='question-point' autoComplete='off'
@@ -130,6 +119,17 @@ const AddEditQuestionModal = ({
                 setQuestionInfo({
                   ...questionInfo,
                   point: e.target.value
+                });
+              }}
+            />
+            <label htmlFor='question-time'>Time Limit(s): </label>
+            <input
+              type="text" name='question-time' autoComplete='off'
+              value={questionInfo.time}
+              onChange={(e) => {
+                setQuestionInfo({
+                  ...questionInfo,
+                  time: e.target.value
                 });
               }}
             />
@@ -179,10 +179,10 @@ const AddEditQuestionModal = ({
                 />
                 <div className={styles.checkBox}>
                   <input type="checkbox"
-                    value={questionInfo.answer[index]}
-                    onChange={() => {
+                    checked={questionInfo.answer[index]}
+                    onChange={(e) => {
                       const updatedAnswer = [...questionInfo.answer];
-                      updatedAnswer[index] = !updatedAnswer[index];
+                      updatedAnswer[index] = e.target.checked;
                       setQuestionInfo({
                         ...questionInfo,
                         answer: updatedAnswer
