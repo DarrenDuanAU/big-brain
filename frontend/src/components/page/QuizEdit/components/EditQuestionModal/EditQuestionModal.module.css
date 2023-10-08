@@ -1,0 +1,102 @@
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    color: red;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    z-index: 1;
+  }
+  
+  .topbar {
+    height: 35px;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #1676d2;
+    display: flex;
+    justify-content: right;
+    /* text-align: right; */
+  }
+  
+  .crossIcon {
+    /* margin: 3px 5px auto auto; */
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(45deg);
+    /* background-color: red; */
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 440px;
+    width: 300px;
+    /* background-color: yellow; */
+    margin-top: 30px;
+  }
+  
+  input {
+    height: 30px;
+    width: 80%;
+    border: 1px rgba(0, 0, 0, 0.3) solid;
+    border-radius: 5px;
+  }
+  
+  .types {
+    width: 180px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .type {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .type > input {
+    margin: 0 5px;
+  }
+  
+  .choice {
+    width: 100%;
+    display: flex;
+    /* background-color: red; */
+  }
+  
+  .choice > label {
+    width: 30px;
+  }
+  .choice .checkBox {
+    width: 20px;
+    margin-left: 10px;
+  }
+  

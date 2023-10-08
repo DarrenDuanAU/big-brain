@@ -6,12 +6,14 @@ import APICall from '../../apis/APICall';
 import Topbar from '../shared/Topbar/Topbar';
 import styles from './QuizEdit.module.css';
 import Button from '@mui/material/Button';
-import AddEditQuestionModal from './components/AddEditQuestionModal/AddEditQuestionModal';
+import AddQuestionModal from './components/AddQuestionModal/AddQuestionModal';
+import EditQuestionModal from './components/EditQuestionModal/EditQuestionModal';
 import QuestionList from './components/QuestionList/QuestionList';
 
 function QuizEdit () {
   const [fullQuizData, setFullQuizData] = useState(null);
-  const [showPopups, setShowPopups] = useState(false);
+  const [showAddQuestionModal, setShowAddQuestionModal] = useState(false);
+  const [showEditQuestionModal, setShowEditQuestionModal] = useState(false);
   const params = useParams();
 
   useEffect(() => {
@@ -28,15 +30,20 @@ function QuizEdit () {
       <Topbar />
       <div className={styles.contentWrapper}>
         <div className={styles.buttonsContainer}>
-          <Button variant='contained' onClick={() => setShowPopups(true)}>add New Question</Button>
+          <Button variant='contained' onClick={() => setShowAddQuestionModal(true)}>add New Question</Button>
         </div>
         <div className={styles.tableWrapper}>
-          <QuestionList fullQuizData={fullQuizData} setShowPopups={setShowPopups}/>
+          <QuestionList fullQuizData={fullQuizData} setShowPopups={setShowEditQuestionModal}/>
         </div>
       </div>
 
-      {showPopups && <AddEditQuestionModal
-        setShowPopups={setShowPopups}
+      {showAddQuestionModal && <AddQuestionModal
+        setVisible={setShowAddQuestionModal}
+        fetchedQuestions={fullQuizData.questions}
+        setFullQuizData={setFullQuizData} />}
+
+      {showEditQuestionModal && <EditQuestionModal
+        setVisible={setShowEditQuestionModal}
         fetchedQuestions={fullQuizData.questions}
         setFullQuizData={setFullQuizData} />}
     </div>

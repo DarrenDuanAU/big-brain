@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from './AddEditQuestionModal.module.css';
+import styles from './EditQuestionModal.module.css';
 import Button from '@mui/material/Button';
 import APICall from '../../../../apis/APICall';
 import Icon from '@mui/material/Icon';
@@ -7,7 +7,7 @@ import { useParams } from 'react-router-dom';
 import { v4 } from 'uuid';
 
 const AddEditQuestionModal = ({
-  setShowPopups,
+  setVisible,
   fetchedQuestions,
   setFullQuizData
 }) => {
@@ -42,7 +42,7 @@ const AddEditQuestionModal = ({
       questions
     });
     if (res) {
-      setShowPopups(false);
+      setVisible(false);
       const temp = await APICall('/admin/quiz/' + params.quizId, 'GET', null)
       setFullQuizData(temp);
     }
@@ -50,12 +50,12 @@ const AddEditQuestionModal = ({
 
   return (
     <>
-      <div className={styles.container} onClick={() => setShowPopups(false)}>
+      <div className={styles.container} onClick={() => setVisible(false)}>
       </div>
 
       <div className={styles.box}>
         <div className={styles.topbar}>
-          <div className={styles.crossIcon} onClick={() => setShowPopups(false)}>
+          <div className={styles.crossIcon} onClick={() => setVisible(false)}>
             <Icon sx={{ fontSize: 30 }}>add_circle</Icon>
           </div>
         </div>
