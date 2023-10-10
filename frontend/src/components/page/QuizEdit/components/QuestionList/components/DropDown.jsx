@@ -11,7 +11,7 @@ const DropDown = ({
   return (
     <div className={styles.pageWrapper}>
       <div className={styles.actionButton}>
-        <button>...</button>
+        <img src="/icons/more-button.svg" alt="more-button" width="20px"/>
       </div>
       <div className={styles.dropDownWrapper}>
           <button onClick={() => {
