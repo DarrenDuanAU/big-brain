@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './QuestionList.module.css';
 import APICall from '../../../../apis/APICall';
+import DropDown from './components/DropDown';
 
 const QuestionList = ({
   setTargetQuestion,
@@ -66,8 +67,13 @@ const QuestionList = ({
             }).filter((choice) => choice != null).join('/')
             }</td>
             <td className={styles.colSix}>
-              <button onClick={() => { editQuestionHandler(question) }}>edit</button>
-              <button onClick={() => { deleteQuestionHandler(question.id) }}>delete</button>
+              <DropDown
+                question={question}
+                editQuestionHandler={editQuestionHandler}
+                deleteQuestionHandler={deleteQuestionHandler}
+              />
+              {/* <button onClick={() => { editQuestionHandler(question) }}>edit</button>
+              <button onClick={() => { deleteQuestionHandler(question.id) }}>delete</button> */}
             </td>
           </tr>
           ))}
