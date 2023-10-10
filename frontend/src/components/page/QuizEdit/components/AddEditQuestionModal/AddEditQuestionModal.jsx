@@ -5,6 +5,9 @@ import APICall from '../../../../apis/APICall';
 import Icon from '@mui/material/Icon';
 import { useParams } from 'react-router-dom';
 import { v4 } from 'uuid';
+// import {
+//   IsValidQuestion
+// } from '../../service';
 
 const AddEditQuestionModal = ({
   targetQuestion,
@@ -39,6 +42,9 @@ const AddEditQuestionModal = ({
   }, [])
 
   const addQeustion = async () => {
+    // if (!IsValidQuestion(questionInfo.str)) {
+    //   return;
+    // }
     const randomId = v4();
     const questions = [
       ...fetchedQuestions,
@@ -87,8 +93,8 @@ const AddEditQuestionModal = ({
   };
 
   return (
-    <>
-      <div className={styles.container} onClick={() => setVisible(false)}>
+    <div className={styles.pageWrapper}>
+      <div className={styles.background} onClick={() => setVisible(false)}>
       </div>
 
       <div className={styles.box}>
@@ -99,10 +105,24 @@ const AddEditQuestionModal = ({
         </div>
 
         <form>
+          <div className={styles.header}>
+            {targetQuestion === null
+              ? <h2>Create a Question</h2>
+              : <h2>Edit the Question</h2>
+            }
+          </div>
           <div className={styles.form}>
             <label htmlFor='question-str'>Question: </label>
-            <input
-              type="text" name='question-str' autoComplete='off'
+            <textarea
+              style={{
+                height: '80px',
+                width: '230px',
+                textAlign: 'left',
+                whiteSpace: 'pre-wrap',
+                padding: '5px'
+              }}
+              name='question-str'
+              autoComplete='off'
               value={questionInfo.str}
               onChange={(e) => {
                 setQuestionInfo({
@@ -192,15 +212,16 @@ const AddEditQuestionModal = ({
                 </div>
               </div>
             )}
-
-            {targetQuestion === null
-              ? <Button variant='outlined' onClick={addQeustion}>create</Button>
-              : <Button variant='outlined' onClick={updateEditQuestion}>Edit</Button>
-            }
+            <div className={styles.bottomButtonContainer}>
+              {targetQuestion === null
+                ? <Button variant='outlined' onClick={addQeustion}>create</Button>
+                : <Button variant='outlined' onClick={updateEditQuestion}>submit</Button>
+              }
+            </div>
           </div>
         </form>
       </div>
-    </>
+    </div>
   );
 };
 

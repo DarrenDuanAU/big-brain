@@ -1,4 +1,4 @@
-.container {
+.background {
   position: fixed;
   top: 0;
   left: 0;
@@ -19,7 +19,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 400px;
-  height: 500px;
+  height: 600px;
   border-radius: 10px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
   background-color: #fff;
@@ -37,6 +37,12 @@
   display: flex;
   justify-content: right;
   /* text-align: right; */
+}
+
+.header {
+  margin-top: 40px;
+  width: 100%;
+  text-align: center;
 }
 
 .crossIcon {
@@ -99,3 +105,11 @@ input {
   width: 20px;
   margin-left: 10px;
 }
+
+.bottomButtonContainer {
+  margin-top: 10px;
+}
+
+/* .invalid {
+  border: 1px solid red;
+} */
