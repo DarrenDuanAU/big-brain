@@ -97,7 +97,7 @@ const AddEditQuestionModal = ({
       <div className={styles.background} onClick={() => setVisible(false)}>
       </div>
 
-      <div className={styles.box}>
+      <div className={styles.modalWrapper}>
         <div className={styles.topbar}>
           <div className={styles.crossIcon} onClick={() => setVisible(false)}>
             <Icon sx={{ fontSize: 30 }}>add_circle</Icon>
@@ -105,56 +105,59 @@ const AddEditQuestionModal = ({
         </div>
 
         <form>
-          <div className={styles.header}>
+          <div className={styles.headerWrapper}>
             {targetQuestion === null
               ? <h2>Create a Question</h2>
               : <h2>Edit the Question</h2>
             }
           </div>
-          <div className={styles.form}>
-            <label htmlFor='question-str'>Question: </label>
-            <textarea
-              style={{
-                height: '80px',
-                width: '230px',
-                textAlign: 'left',
-                whiteSpace: 'pre-wrap',
-                padding: '5px'
-              }}
-              name='question-str'
-              autoComplete='off'
-              value={questionInfo.str}
-              onChange={(e) => {
-                setQuestionInfo({
-                  ...questionInfo,
-                  str: e.target.value
-                });
-              }}
-            />
-            <label htmlFor='question-point'>Points: </label>
-            <input
-              type="text" name='question-point' autoComplete='off'
-              value={questionInfo.point}
-              onChange={(e) => {
-                setQuestionInfo({
-                  ...questionInfo,
-                  point: e.target.value
-                });
-              }}
-            />
-            <label htmlFor='question-time'>Time Limit(s): </label>
-            <input
-              type="text" name='question-time' autoComplete='off'
-              value={questionInfo.time}
-              onChange={(e) => {
-                setQuestionInfo({
-                  ...questionInfo,
-                  time: e.target.value
-                });
-              }}
-            />
-            <p>Question type:</p>
-            <div className={styles.types}>
+          <div className={styles.formWrapper}>
+
+            <div className={styles.questionStrWrapper}>
+              <label htmlFor='question-str'>Question: </label>
+              <textarea
+                name='question-str'
+                autoComplete='off'
+                value={questionInfo.str}
+                onChange={(e) => {
+                  setQuestionInfo({
+                    ...questionInfo,
+                    str: e.target.value
+                  });
+                }}
+              />
+            </div>
+
+            <div className={styles.pointWrapper}>
+              <label htmlFor='question-point'>Points: </label>
+              <input
+                type="text" name='question-point' autoComplete='off'
+                value={questionInfo.point}
+                onChange={(e) => {
+                  setQuestionInfo({
+                    ...questionInfo,
+                    point: e.target.value
+                  });
+                }}
+              />
+            </div>
+
+            <div className={styles.timeWrapper}>
+              <label htmlFor='question-time'>Time Limit(s): </label>
+              <input
+                type="text" name='question-time' autoComplete='off'
+                value={questionInfo.time}
+                onChange={(e) => {
+                  setQuestionInfo({
+                    ...questionInfo,
+                    time: e.target.value
+                  });
+                }}
+              />
+            </div>
+
+            <div className={styles.typesWrapper}>
+              <p>Question type:</p>
               <div className={styles.type}>
                 <input
                   type="radio" name='type' id='single' autoComplete='off'
@@ -182,37 +185,41 @@ const AddEditQuestionModal = ({
               </div>
             </div>
 
-            {choiceIndex.map((value, index) =>
-              <div key={index} className={styles.choice}>
-                <label htmlFor='choice'>{value}.  </label>
-                <input
-                  type="text" name='choice' autoComplete='off'
-                  value={questionInfo.choice[index]}
-                  onChange={(e) => {
-                    const updatedChoice = [...questionInfo.choice];
-                    updatedChoice[index] = e.target.value;
-                    setQuestionInfo({
-                      ...questionInfo,
-                      choice: updatedChoice
-                    });
-                  }}
-                />
-                <div className={styles.checkBox}>
-                  <input type="checkbox"
-                    checked={questionInfo.answer[index]}
+            <div className={styles.choicesWrapper} >
+              <p>Choices:</p>
+              {choiceIndex.map((value, index) =>
+                <div key={index} className={styles.choice}>
+                  <label htmlFor='choice'>{value}.  </label>
+                  <input
+                    type="text" name='choice' autoComplete='off'
+                    value={questionInfo.choice[index]}
                     onChange={(e) => {
-                      const updatedAnswer = [...questionInfo.answer];
-                      updatedAnswer[index] = e.target.checked;
+                      const updatedChoice = [...questionInfo.choice];
+                      updatedChoice[index] = e.target.value;
                       setQuestionInfo({
                         ...questionInfo,
-                        answer: updatedAnswer
-                      })
+                        choice: updatedChoice
+                      });
                     }}
                   />
+                  <div className={styles.checkboxWrapper}>
+                    <input type="checkbox"
+                      checked={questionInfo.answer[index]}
+                      onChange={(e) => {
+                        const updatedAnswer = [...questionInfo.answer];
+                        updatedAnswer[index] = e.target.checked;
+                        setQuestionInfo({
+                          ...questionInfo,
+                          answer: updatedAnswer
+                        })
+                      }}
+                    />
+                  </div>
                 </div>
-              </div>
-            )}
-            <div className={styles.bottomButtonContainer}>
+              )}
+            </div>
+
+            <div className={styles.bottomButtonWrapper}>
               {targetQuestion === null
                 ? <Button variant='outlined' onClick={addQeustion}>create</Button>
                 : <Button variant='outlined' onClick={updateEditQuestion}>submit</Button>
