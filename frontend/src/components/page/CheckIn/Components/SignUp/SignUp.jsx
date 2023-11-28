@@ -2,12 +2,14 @@ import React from 'react';
 import {
   useNavigate
 } from 'react-router-dom';
-import { useContext, Context } from '../../../../context';
+import { useContext, Context } from '../../../../../context';
 import Button from '@mui/material/Button';
-import { BACKEND_PORT } from '../../../../const';
-import './SignUp.css'
+import { BACKEND_PORT } from '../../../../../const';
+import styles from './SignUp.module.css';
 
-function SignUp () {
+function SignUp ({
+  setPage
+}) {
   const [email, setEmail] = React.useState('');
   const [password, setPassword] = React.useState('');
   const [name, setName] = React.useState('');
@@ -38,14 +40,25 @@ function SignUp () {
     }
   }
   return (
-    <div className='signup'>
-      <label htmlFor="email">Email: </label>
-      <input id="email" value ={email} onChange ={ (e) => setEmail(e.target.value)} /><br />
-      <label htmlFor="password">Password: </label>
-      <input id="password" value ={password} onChange ={ (e) => setPassword(e.target.value)} /> <br />
-      <label htmlFor="name">Name: </label>
-      <input id="name" value ={name} onChange ={ (e) => setName(e.target.value)} /> <br />
-      <Button variant="contained" id="signUserUp" onClick={register}>Sign up</Button>
+    <div className={styles.signUp}>
+      <div className={styles.title}>
+        <h2>Sign Up</h2>
+      </div>
+      <form className={styles.form}>
+        <label htmlFor="email">Email: </label>
+        <input id="email" value ={email} onChange ={ (e) => setEmail(e.target.value)} />
+
+        <label htmlFor="password">Password: </label>
+        <input id="password" value ={password} onChange ={ (e) => setPassword(e.target.value)} />
+
+        <label htmlFor="name">Name: </label>
+        <input id="name" value ={name} onChange ={ (e) => setName(e.target.value)} />
+
+        <Button variant="contained" id="signUserUp" onClick={register}>Sign up</Button>
+      </form>
+      <div className={styles.taggleLink}>
+        <p>Or <a onClick={() => setPage('signin')}>Sign In</a></p>
+      </div>
     </div>
   )
 }

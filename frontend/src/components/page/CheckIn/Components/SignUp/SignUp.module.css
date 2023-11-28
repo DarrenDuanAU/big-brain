@@ -1,0 +1,30 @@
+.signUp {
+  width: calc(300px + 10vw);
+  height: 500px;
+  border: 0.5px #999 solid;
+  border-radius: 20px;
+  box-shadow: 0 3px 5px 0 rgba(255, 232, 232, 0.2), 0 4px 12px 0 rgba(0, 0, 0, 0.19);
+}
+
+.title {
+  text-align: center;
+  padding: 30px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.formButton {
+  margin-top: 50px;
+}
+
+.taggleLink {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
