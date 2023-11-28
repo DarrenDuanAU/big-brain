@@ -57,7 +57,7 @@ function SignUp ({
         <Button className={styles.formButton} variant="contained" id="signUserUp" onClick={register}>Sign up</Button>
       </form>
       <div className={styles.taggleLink}>
-        <p>Or <a onClick={() => setPage('signin')}>Sign In</a></p>
+        <p>Or <button className={styles.taggleButton} onClick={() => setPage('signin')}>Sign In</button></p>
       </div>
     </div>
   )
