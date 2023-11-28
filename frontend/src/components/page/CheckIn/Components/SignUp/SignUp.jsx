@@ -54,7 +54,7 @@ function SignUp ({
         <label htmlFor="name">Name: </label>
         <input id="name" value ={name} onChange ={ (e) => setName(e.target.value)} />
 
-        <Button variant="contained" id="signUserUp" onClick={register}>Sign up</Button>
+        <Button className={styles.formButton} variant="contained" id="signUserUp" onClick={register}>Sign up</Button>
       </form>
       <div className={styles.taggleLink}>
         <p>Or <a onClick={() => setPage('signin')}>Sign In</a></p>
