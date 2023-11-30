@@ -11,13 +11,17 @@ const SessionModal = ({
 }) => {
   return (
     <Modal setVisible={setVisible}>
-      {currentSession.id}
+      Session Id: {currentSession.id}
       {currentSession.questions.map((question) => (
         question.str
       ))}
       {currentSession.questions.map((question, index) => {
         if (currentSession.stage !== -1 && index === currentSession.stage) {
-          return question.str;
+          return (
+            <div key={index}>
+              {question.str}
+            </div>
+          )
         }
         return null;
       })}

@@ -72,18 +72,19 @@ const Quiz = ({
 
   return (
     <div className={styles.pageWrapper}>
-      <div className={styles.info}>
-        {/* Quiz ID: {quizData.id} <br /> */}
-        <p className={styles.infoTitle}>Quiz Name: <br /></p>
-        <p className={styles.infoQuizName}> {quizData.name} <br /></p>
-        <p className={styles.infoDateTime}>{quizData.createdAt.split('T')[1].slice(0, 8) + ' / ' + quizData.createdAt.split('T')[0]} <br /></p>
+      <div className={styles.cardWrapper}>
+        <div className={styles.info}>
+          {/* Quiz ID: {quizData.id} <br /> */}
+          <p className={styles.infoTitle}>Quiz Name: <br /></p>
+          <p className={styles.infoQuizName}> {quizData.name} <br /></p>
+          <p className={styles.infoDateTime}>{quizData.createdAt.split('T')[1].slice(0, 8) + ' / ' + quizData.createdAt.split('T')[0]} <br /></p>
+        </div>
+        <div className={styles.buttons}>
+          <Button variant='outlined' onClick={startSession}>start</Button>
+          <Button variant='outlined' onClick={editQuiz}>edit</Button>
+          <Button variant='contained' onClick={deleteQuiz}>delete</Button>
+        </div>
       </div>
-      <div className={styles.buttons}>
-        <Button variant='outlined' onClick={startSession}>start</Button>
-        <Button variant='outlined' onClick={editQuiz}>edit</Button>
-        <Button variant='contained' onClick={deleteQuiz}>delete</Button>
-      </div>
-      {/* <Modal>hihi</Modal> */}
       {sessionModalVisible &&
         <SessionModal
           setVisible={setSessionModalVisible}

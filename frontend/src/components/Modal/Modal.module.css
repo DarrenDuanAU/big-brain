@@ -28,6 +28,7 @@
 }
 
 .topbar {
+  position: fixed;
   height: 35px;
   width: 100%;
   position: absolute;
@@ -36,24 +37,29 @@
   background-color: #1676d2;
   display: flex;
   justify-content: right;
+  z-index: 1;
 }
 
 .headerWrapper {
+  position: fixed;
   margin-top: 10px;
   width: 100%;
   text-align: center;
+  z-index: 1;
 }
 
 .crossIcon {
+  position: fixed;
   height: 35px;
   width: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
   transform: rotate(45deg);
+  z-index: 1;
 }
 
-input {
+/* input {
   height: 30px;
   border: 1px rgba(0, 0, 0, 0.3) solid;
   border-radius: 5px;
@@ -137,4 +143,4 @@ input {
 .bottomButtonWrapper {
   display: flex;
   justify-content: center;
-}
+} */
