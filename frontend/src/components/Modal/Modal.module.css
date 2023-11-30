@@ -1,0 +1,140 @@
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  color: red;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.modalWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 700px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.topbar {
+  height: 35px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #1676d2;
+  display: flex;
+  justify-content: right;
+}
+
+.headerWrapper {
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.crossIcon {
+  height: 35px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(45deg);
+}
+
+input {
+  height: 30px;
+  border: 1px rgba(0, 0, 0, 0.3) solid;
+  border-radius: 5px;
+}
+
+.formWrapper {
+  height: 540px;
+  width: 400px;
+  margin-top: 30px;
+}
+
+.formWrapper > div {
+  margin-top: 15px;
+}
+
+.questionStrWrapper {
+  width: 100%;
+}
+
+.questionStrWrapper > textarea {
+  height: 80px;
+  width: 100%;
+}
+
+.pointWrapper {
+  width: 100%;
+}
+
+.pointWrapper > input {
+  width: 100%;
+}
+
+.timeWrapper {
+  width: 100%;
+}
+
+.timeWrapper > input {
+  width: 100%;
+}
+
+.typesWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.type {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.type > input {
+  margin: 0 5px;
+}
+
+.choicesWrapper {
+  width: 100%;
+}
+
+.choice {
+  width: 100%;
+  display: flex;
+}
+
+.choice > label {
+  width: 20px;
+}
+
+.choice > input {
+  width: 90%;
+}
+
+.choice .checkboxWrapper {
+  width: 20px;
+  margin-left: 10px;
+}
+
+.bottomButtonWrapper {
+  display: flex;
+  justify-content: center;
+}

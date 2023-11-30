@@ -1,16 +1,19 @@
 .pageWrapper {
-  /* background-color: yellow; */
   padding-top: 100px;
   background-color: #fafafa;
   min-height: calc(100vh - 100px);
 }
 
-.buttonsContainer {
-  
-}
-
 .tableWrapper {
   width: 80%;
-  margin: 20px auto auto 10%;
-  padding-bottom: 100px;
+  margin: 30px 10%;
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.toDashboardButtonContainer {
+  padding-left: 30px;
 }

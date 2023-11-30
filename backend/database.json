@@ -57,88 +57,12 @@
     }
   },
   "quizzes": {
-    "153765138": {
-      "name": "week 7 quiz",
+    "109710994": {
+      "name": "",
       "owner": "",
       "questions": [
         {
-          "id": "e2ec5125-2cae-4cee-af3c-0335ed02e137",
-          "str": "hi",
-          "time": "5",
-          "type": "single",
-          "point": "10",
-          "choice": [
-            "1",
-            "2",
-            "3",
-            "4"
-          ],
-          "answer": [
-            false,
-            false,
-            false,
-            true
-          ]
-        },
-        {
-          "id": "1c4e5155-91ba-4a61-831c-0d2c62d18a09",
-          "str": "",
-          "time": "",
-          "type": "",
-          "point": "",
-          "choice": [
-            "",
-            "",
-            "",
-            ""
-          ],
-          "answer": [
-            false,
-            false,
-            false,
-            false
-          ]
-        },
-        {
-          "id": "2910aac2-f00c-44d7-9058-d8e7b74846fd",
-          "str": "",
-          "time": "",
-          "type": "",
-          "point": "",
-          "choice": [
-            "",
-            "",
-            "",
-            ""
-          ],
-          "answer": [
-            false,
-            false,
-            false,
-            false
-          ]
-        },
-        {
-          "id": "58c2b66e-cd78-4793-94dd-589611eebf28",
-          "str": "",
-          "time": "",
-          "type": "",
-          "point": "",
-          "choice": [
-            "",
-            "",
-            "",
-            ""
-          ],
-          "answer": [
-            false,
-            false,
-            false,
-            false
-          ]
-        },
-        {
-          "id": "828cad07-02b1-4313-a979-d25f2aed85fe",
+          "id": "6f11f9c8-de75-4f82-9628-6d4d1b90dabe",
           "str": "a",
           "time": "",
           "type": "",
@@ -157,8 +81,8 @@
           ]
         },
         {
-          "id": "50f18d7e-bb70-438b-af05-4e78a8997975",
-          "str": "",
+          "id": "812a9ccb-eda4-47f9-9cfc-9131e7f62ea3",
+          "str": "b",
           "time": "",
           "type": "",
           "point": "",
@@ -173,107 +97,12 @@
             false,
             false,
             false
-          ]
-        },
-        {
-          "id": "f3d996ab-9cf3-421e-ba3c-1dd51af964b9",
-          "str": "",
-          "time": "",
-          "type": "",
-          "point": "",
-          "choice": [
-            "",
-            "",
-            "",
-            ""
-          ],
-          "answer": [
-            false,
-            false,
-            false,
-            false
-          ]
-        },
-        {
-          "id": "f9ac7a89-5ae8-43d6-a439-e299992cccf8",
-          "str": "",
-          "time": "",
-          "type": "",
-          "point": "",
-          "choice": [
-            "",
-            "",
-            "",
-            ""
-          ],
-          "answer": [
-            false,
-            false,
-            false,
-            false
-          ]
-        },
-        {
-          "id": "1826bd6e-cedb-44cf-b1bb-5c8439ea66c6",
-          "str": "",
-          "time": "",
-          "type": "",
-          "point": "",
-          "choice": [
-            "",
-            "",
-            "",
-            ""
-          ],
-          "answer": [
-            false,
-            false,
-            false,
-            false
-          ]
-        },
-        {
-          "id": "4ddf7bd4-c456-48ff-8d54-80aa540f02bc",
-          "str": "",
-          "time": "",
-          "type": "",
-          "point": "",
-          "choice": [
-            "",
-            "",
-            "",
-            ""
-          ],
-          "answer": [
-            false,
-            false,
-            false,
-            false
-          ]
-        },
-        {
-          "id": "356eb1d7-d0e3-42e3-8aa1-c9d1ddf42fde",
-          "str": "hi",
-          "time": "5",
-          "type": "single",
-          "point": "10",
-          "choice": [
-            "1",
-            "2",
-            "3",
-            "4"
-          ],
-          "answer": [
-            false,
-            false,
-            false,
-            true
           ]
         }
       ],
       "thumbnail": null,
       "active": null,
-      "createdAt": "2023-10-02T02:56:43.690Z"
+      "createdAt": "2023-11-30T09:25:42.431Z"
     },
     "159394597": {
       "name": "aax",
@@ -307,137 +136,6 @@
       "active": null,
       "createdAt": "2023-04-11T01:04:43.334Z"
     },
-    "370907471": {
-      "name": "final sample",
-      "owner": "",
-      "questions": [
-        {
-          "id": "6733136d-0e0b-4f04-a8c6-802d228a8bbc",
-          "str": "hihihihihiyoukon",
-          "time": "",
-          "type": "",
-          "point": "",
-          "choice": [
-            "",
-            "",
-            "",
-            ""
-          ],
-          "answer": [
-            false,
-            false,
-            false,
-            false
-          ]
-        },
-        {
-          "id": "5797cece-a88f-4219-b6bd-eeb04a00e8f6",
-          "str": "nihao",
-          "time": "",
-          "type": "",
-          "point": "",
-          "choice": [
-            "a",
-            "b",
-            "c",
-            "d"
-          ],
-          "answer": [
-            false,
-            false,
-            false,
-            false
-          ]
-        },
-        {
-          "id": "74a988f9-692c-40ea-943a-5b806bdea737",
-          "str": "hihihi",
-          "time": "",
-          "type": "",
-          "point": "",
-          "choice": [
-            "",
-            "",
-            "",
-            ""
-          ],
-          "answer": [
-            false,
-            false,
-            false,
-            false
-          ]
-        },
-        {
-          "id": "0a415b0e-6781-4e5a-beea-06b716480020",
-          "str": "dodododod",
-          "time": "1010",
-          "type": "",
-          "point": "10",
-          "choice": [
-            "aa",
-            "x",
-            "x",
-            "x"
-          ],
-          "answer": [
-            true,
-            false,
-            false,
-            false
-          ]
-        },
-        {
-          "id": "8531b6f3-b734-41dd-86c7-168473ead06f",
-          "str": "keke",
-          "time": "",
-          "type": "single",
-          "point": "",
-          "choice": [
-            "a",
-            "v",
-            "b",
-            "v"
-          ],
-          "answer": [
-            false,
-            false,
-            false,
-            true
-          ]
-        },
-        {
-          "id": "4cde4949-0776-4921-98f3-ea54311a81e1",
-          "str": "do you know me",
-          "time": "10",
-          "type": "single",
-          "point": "5",
-          "choice": [
-            "aa",
-            "bb",
-            "cc",
-            "dd"
-          ],
-          "answer": [
-            false,
-            false,
-            true,
-            false
-          ]
-        }
-      ],
-      "thumbnail": null,
-      "active": null,
-      "createdAt": "2023-10-02T02:56:31.042Z"
-    },
-    "474828973": {
-      "name": "personal questions",
-      "owner": "",
-      "questions": [],
-      "thumbnail": null,
-      "active": null,
-      "createdAt": "2023-10-02T02:57:16.721Z"
-    },
     "522198734": {
       "name": "aa",
       "owner": "adfadf",
@@ -453,14 +151,6 @@
       "thumbnail": null,
       "active": null,
       "createdAt": "2023-04-11T04:42:32.147Z"
-    },
-    "627533669": {
-      "name": "mid term sample",
-      "owner": "",
-      "questions": [],
-      "thumbnail": null,
-      "active": null,
-      "createdAt": "2023-10-02T02:57:25.971Z"
     },
     "717143566": {
       "name": "aax",
@@ -501,53 +191,6 @@
       "thumbnail": null,
       "active": null,
       "createdAt": "2023-04-19T07:41:14.606Z"
-    },
-    "976893598": {
-      "name": "week 6 quiz",
-      "owner": "",
-      "questions": [
-        {
-          "id": "ea5ec3d7-7126-4c75-9ee7-481053861802",
-          "str": "yes",
-          "time": "5",
-          "type": "single",
-          "point": "50",
-          "choice": [
-            "a",
-            "b",
-            "c",
-            "d"
-          ],
-          "answer": [
-            false,
-            true,
-            true,
-            true
-          ]
-        },
-        {
-          "id": "36294b77-a269-4d8f-bc46-b4f8cfe1f709",
-          "str": "do you",
-          "time": "5",
-          "type": "single",
-          "point": "10",
-          "choice": [
-            "yes",
-            "no",
-            "ok",
-            "bu ok"
-          ],
-          "answer": [
-            true,
-            false,
-            true,
-            false
-          ]
-        }
-      ],
-      "thumbnail": null,
-      "active": null,
-      "createdAt": "2023-10-02T02:56:49.224Z"
     }
   },
   "sessions": {
@@ -841,6 +484,73 @@
           ],
           "photo": null,
           "video": ""
+        }
+      ],
+      "active": false,
+      "answerAvailable": false
+    },
+    "147711": {
+      "quizId": "153765138",
+      "position": -1,
+      "isoTimeLastQuestionStarted": null,
+      "players": {},
+      "questions": [
+        {
+          "id": "e07b85c6-f9de-4c9b-9cd6-791e197ac758",
+          "str": "do you think this is a good idea?",
+          "time": "5",
+          "type": "single",
+          "point": "10",
+          "choice": [
+            "yes",
+            "no",
+            "maybe",
+            "abs"
+          ],
+          "answer": [
+            true,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "86b38b71-af11-44bd-bd38-c4999b78c75e",
+          "str": "could you please like it? give me the best idea about it",
+          "time": "5",
+          "type": "single",
+          "point": "10",
+          "choice": [
+            "jogging",
+            "running",
+            "swimming",
+            "skipping"
+          ],
+          "answer": [
+            true,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "0161b1c2-5122-4d28-bfd2-39d00201655d",
+          "str": "Could you please give me some idea about your job?",
+          "time": "15",
+          "type": "multiple",
+          "point": "15",
+          "choice": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "answer": [
+            false,
+            false,
+            true,
+            true
+          ]
         }
       ],
       "active": false,
@@ -2003,6 +1713,255 @@
       "active": false,
       "answerAvailable": false
     },
+    "205687": {
+      "quizId": "411500628",
+      "position": 2,
+      "isoTimeLastQuestionStarted": "2023-11-01T22:52:07.086Z",
+      "players": {},
+      "questions": [
+        {
+          "id": "f240b287-a10b-40eb-b8a9-2ddd42072cbb",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "a66dc335-3688-4637-8bb2-ff42e77e384d",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "active": false,
+      "answerAvailable": false
+    },
+    "206527": {
+      "quizId": "153765138",
+      "position": 3,
+      "isoTimeLastQuestionStarted": "2023-11-01T08:26:04.347Z",
+      "players": {},
+      "questions": [
+        {
+          "id": "e07b85c6-f9de-4c9b-9cd6-791e197ac758",
+          "str": "do you think this is a good idea?",
+          "time": "5",
+          "type": "single",
+          "point": "10",
+          "choice": [
+            "yes",
+            "no",
+            "maybe",
+            "abs"
+          ],
+          "answer": [
+            true,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "86b38b71-af11-44bd-bd38-c4999b78c75e",
+          "str": "could you please like it? give me the best idea about it",
+          "time": "5",
+          "type": "single",
+          "point": "10",
+          "choice": [
+            "jogging",
+            "running",
+            "swimming",
+            "skipping"
+          ],
+          "answer": [
+            true,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "0161b1c2-5122-4d28-bfd2-39d00201655d",
+          "str": "Could you please give me some idea about your job?",
+          "time": "15",
+          "type": "multiple",
+          "point": "15",
+          "choice": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "answer": [
+            false,
+            false,
+            true,
+            true
+          ]
+        }
+      ],
+      "active": false,
+      "answerAvailable": false
+    },
+    "206820": {
+      "quizId": "109710994",
+      "position": 2,
+      "isoTimeLastQuestionStarted": "2023-11-30T10:16:09.480Z",
+      "players": {},
+      "questions": [
+        {
+          "id": "6f11f9c8-de75-4f82-9628-6d4d1b90dabe",
+          "str": "a",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "812a9ccb-eda4-47f9-9cfc-9131e7f62ea3",
+          "str": "b",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "active": false,
+      "answerAvailable": false
+    },
+    "212588": {
+      "quizId": "573007324",
+      "position": 1,
+      "isoTimeLastQuestionStarted": "2023-11-30T09:20:23.599Z",
+      "players": {},
+      "questions": [
+        {
+          "id": "a998ea2b-ca53-4255-91b6-93299bfd25b2",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "c5267166-967b-4595-bb7c-47084e88ab84",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "f2007512-c093-4771-8667-36f1f51b4c84",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "f943a614-82f9-452b-b792-044f448c0f3c",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "active": false,
+      "answerAvailable": true
+    },
     "217840": {
       "quizId": "754412335",
       "position": 3,
@@ -2112,6 +2071,15 @@
           "video": ""
         }
       ],
+      "active": false,
+      "answerAvailable": false
+    },
+    "220806": {
+      "quizId": "109710994",
+      "position": -1,
+      "isoTimeLastQuestionStarted": null,
+      "players": {},
+      "questions": [],
       "active": false,
       "answerAvailable": false
     },
@@ -2283,6 +2251,101 @@
       "active": false,
       "answerAvailable": false
     },
+    "239926": {
+      "quizId": "992454472",
+      "position": 0,
+      "isoTimeLastQuestionStarted": "2023-11-30T00:21:33.758Z",
+      "players": {},
+      "questions": [],
+      "active": false,
+      "answerAvailable": false
+    },
+    "240679": {
+      "quizId": "313041568",
+      "position": -1,
+      "isoTimeLastQuestionStarted": null,
+      "players": {},
+      "questions": [
+        {
+          "id": "0004d78d-9438-4991-9249-77efd7211c80",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "693cb882-7aae-441b-a054-7dfbf55a684f",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "6d3a5243-6a9f-439b-afaa-594da724ecca",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "a7f82395-051e-4557-a5a1-8317ac677182",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "active": false,
+      "answerAvailable": false
+    },
     "246336": {
       "quizId": "617231170",
       "position": 2,
@@ -2402,6 +2465,54 @@
       "active": false,
       "answerAvailable": true
     },
+    "250818": {
+      "quizId": "109710994",
+      "position": 2,
+      "isoTimeLastQuestionStarted": "2023-11-30T10:36:44.912Z",
+      "players": {},
+      "questions": [
+        {
+          "id": "6f11f9c8-de75-4f82-9628-6d4d1b90dabe",
+          "str": "a",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "812a9ccb-eda4-47f9-9cfc-9131e7f62ea3",
+          "str": "b",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "active": false,
+      "answerAvailable": false
+    },
     "255359": {
       "quizId": "617231170",
       "position": 2,
@@ -2454,6 +2565,54 @@
           ],
           "photo": null,
           "video": ""
+        }
+      ],
+      "active": false,
+      "answerAvailable": false
+    },
+    "264947": {
+      "quizId": "411500628",
+      "position": -1,
+      "isoTimeLastQuestionStarted": null,
+      "players": {},
+      "questions": [
+        {
+          "id": "f240b287-a10b-40eb-b8a9-2ddd42072cbb",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "a66dc335-3688-4637-8bb2-ff42e77e384d",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
         }
       ],
       "active": false,
@@ -3231,6 +3390,111 @@
       "active": false,
       "answerAvailable": true
     },
+    "298342": {
+      "quizId": "109710994",
+      "position": 2,
+      "isoTimeLastQuestionStarted": "2023-11-30T10:38:35.088Z",
+      "players": {},
+      "questions": [
+        {
+          "id": "6f11f9c8-de75-4f82-9628-6d4d1b90dabe",
+          "str": "a",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "812a9ccb-eda4-47f9-9cfc-9131e7f62ea3",
+          "str": "b",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "active": false,
+      "answerAvailable": false
+    },
+    "300289": {
+      "quizId": "109710994",
+      "position": -1,
+      "isoTimeLastQuestionStarted": null,
+      "players": {},
+      "questions": [
+        {
+          "id": "6f11f9c8-de75-4f82-9628-6d4d1b90dabe",
+          "str": "a",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "812a9ccb-eda4-47f9-9cfc-9131e7f62ea3",
+          "str": "b",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "active": false,
+      "answerAvailable": false
+    },
+    "306062": {
+      "quizId": "413942398",
+      "position": -1,
+      "isoTimeLastQuestionStarted": null,
+      "players": {},
+      "questions": [],
+      "active": false,
+      "answerAvailable": false
+    },
     "309292": {
       "quizId": "544167405",
       "position": 2,
@@ -3445,6 +3709,226 @@
           ],
           "photo": null,
           "video": ""
+        }
+      ],
+      "active": false,
+      "answerAvailable": false
+    },
+    "315555": {
+      "quizId": "360831805",
+      "position": 1,
+      "isoTimeLastQuestionStarted": "2023-11-01T11:25:52.312Z",
+      "players": {},
+      "questions": [
+        {
+          "id": "a53d2050-7f9f-45a0-87af-73cab511f904",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "active": false,
+      "answerAvailable": false
+    },
+    "316204": {
+      "quizId": "153765138",
+      "position": 5,
+      "isoTimeLastQuestionStarted": "2023-11-01T08:37:07.438Z",
+      "players": {},
+      "questions": [
+        {
+          "id": "e07b85c6-f9de-4c9b-9cd6-791e197ac758",
+          "str": "do you think this is a good idea?",
+          "time": "5",
+          "type": "single",
+          "point": "10",
+          "choice": [
+            "yes",
+            "no",
+            "maybe",
+            "abs"
+          ],
+          "answer": [
+            true,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "86b38b71-af11-44bd-bd38-c4999b78c75e",
+          "str": "could you please like it? give me the best idea about it",
+          "time": "5",
+          "type": "single",
+          "point": "10",
+          "choice": [
+            "jogging",
+            "running",
+            "swimming",
+            "skipping"
+          ],
+          "answer": [
+            true,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "0161b1c2-5122-4d28-bfd2-39d00201655d",
+          "str": "Could you please give me some idea about your job?",
+          "time": "15",
+          "type": "multiple",
+          "point": "15",
+          "choice": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "answer": [
+            false,
+            false,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "3b67a957-3079-4b1a-9a1a-6052891269be",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "e4e0cd78-a9da-41a8-a6c4-46a1b41d64f1",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "active": false,
+      "answerAvailable": false
+    },
+    "317250": {
+      "quizId": "991652758",
+      "position": 4,
+      "isoTimeLastQuestionStarted": "2023-11-01T11:22:04.717Z",
+      "players": {},
+      "questions": [
+        {
+          "id": "4e563892-bc69-4311-b06a-f1e68323e29e",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "1aacd6fb-b2d0-42a0-9ff1-10bc3dc32051",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "a47eacdb-7a3e-422d-814f-f9a28888ed2b",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "99241710-b8ae-42d1-a48f-d636cb3cd131",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
         }
       ],
       "active": false,
@@ -3804,6 +4288,54 @@
       "active": false,
       "answerAvailable": true
     },
+    "332063": {
+      "quizId": "109710994",
+      "position": 2,
+      "isoTimeLastQuestionStarted": "2023-11-30T10:01:16.543Z",
+      "players": {},
+      "questions": [
+        {
+          "id": "6f11f9c8-de75-4f82-9628-6d4d1b90dabe",
+          "str": "a",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "812a9ccb-eda4-47f9-9cfc-9131e7f62ea3",
+          "str": "b",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "active": false,
+      "answerAvailable": false
+    },
     "338449": {
       "quizId": "544167405",
       "position": -1,
@@ -3923,6 +4455,140 @@
           ],
           "photo": null,
           "video": ""
+        }
+      ],
+      "active": false,
+      "answerAvailable": false
+    },
+    "344891": {
+      "quizId": "343815398",
+      "position": -1,
+      "isoTimeLastQuestionStarted": null,
+      "players": {},
+      "questions": [
+        {
+          "id": "13a88174-c706-4fe3-86a7-6886af7a05d7",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "05a7795a-8241-4699-a36f-cb5caf6a2c32",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "active": false,
+      "answerAvailable": false
+    },
+    "347214": {
+      "quizId": "573007324",
+      "position": 4,
+      "isoTimeLastQuestionStarted": "2023-11-30T09:03:28.499Z",
+      "players": {},
+      "questions": [
+        {
+          "id": "a998ea2b-ca53-4255-91b6-93299bfd25b2",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "c5267166-967b-4595-bb7c-47084e88ab84",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "f2007512-c093-4771-8667-36f1f51b4c84",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "f943a614-82f9-452b-b792-044f448c0f3c",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
         }
       ],
       "active": false,
@@ -4136,6 +4802,111 @@
       "active": false,
       "answerAvailable": false
     },
+    "357212": {
+      "quizId": "153765138",
+      "position": -1,
+      "isoTimeLastQuestionStarted": null,
+      "players": {},
+      "questions": [
+        {
+          "id": "e07b85c6-f9de-4c9b-9cd6-791e197ac758",
+          "str": "do you think this is a good idea?",
+          "time": "5",
+          "type": "single",
+          "point": "10",
+          "choice": [
+            "yes",
+            "no",
+            "maybe",
+            "abs"
+          ],
+          "answer": [
+            true,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "86b38b71-af11-44bd-bd38-c4999b78c75e",
+          "str": "could you please like it? give me the best idea about it",
+          "time": "5",
+          "type": "single",
+          "point": "10",
+          "choice": [
+            "jogging",
+            "running",
+            "swimming",
+            "skipping"
+          ],
+          "answer": [
+            true,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "0161b1c2-5122-4d28-bfd2-39d00201655d",
+          "str": "Could you please give me some idea about your job?",
+          "time": "15",
+          "type": "multiple",
+          "point": "15",
+          "choice": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "answer": [
+            false,
+            false,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "3b67a957-3079-4b1a-9a1a-6052891269be",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "e4e0cd78-a9da-41a8-a6c4-46a1b41d64f1",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "active": false,
+      "answerAvailable": false
+    },
     "360884": {
       "quizId": "754412335",
       "position": 2,
@@ -4216,6 +4987,73 @@
           ],
           "photo": null,
           "video": ""
+        }
+      ],
+      "active": false,
+      "answerAvailable": false
+    },
+    "379464": {
+      "quizId": "153765138",
+      "position": -1,
+      "isoTimeLastQuestionStarted": null,
+      "players": {},
+      "questions": [
+        {
+          "id": "e07b85c6-f9de-4c9b-9cd6-791e197ac758",
+          "str": "do you think this is a good idea?",
+          "time": "5",
+          "type": "single",
+          "point": "10",
+          "choice": [
+            "yes",
+            "no",
+            "maybe",
+            "abs"
+          ],
+          "answer": [
+            true,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "86b38b71-af11-44bd-bd38-c4999b78c75e",
+          "str": "could you please like it? give me the best idea about it",
+          "time": "5",
+          "type": "single",
+          "point": "10",
+          "choice": [
+            "jogging",
+            "running",
+            "swimming",
+            "skipping"
+          ],
+          "answer": [
+            true,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "0161b1c2-5122-4d28-bfd2-39d00201655d",
+          "str": "Could you please give me some idea about your job?",
+          "time": "15",
+          "type": "multiple",
+          "point": "15",
+          "choice": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "answer": [
+            false,
+            false,
+            true,
+            true
+          ]
         }
       ],
       "active": false,
@@ -4305,6 +5143,54 @@
           ],
           "photo": null,
           "video": ""
+        }
+      ],
+      "active": false,
+      "answerAvailable": false
+    },
+    "387606": {
+      "quizId": "109710994",
+      "position": 2,
+      "isoTimeLastQuestionStarted": "2023-11-30T10:05:46.732Z",
+      "players": {},
+      "questions": [
+        {
+          "id": "6f11f9c8-de75-4f82-9628-6d4d1b90dabe",
+          "str": "a",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "812a9ccb-eda4-47f9-9cfc-9131e7f62ea3",
+          "str": "b",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
         }
       ],
       "active": false,
@@ -4683,6 +5569,15 @@
       "active": false,
       "answerAvailable": false
     },
+    "403443": {
+      "quizId": "360831805",
+      "position": 0,
+      "isoTimeLastQuestionStarted": "2023-11-01T11:29:37.649Z",
+      "players": {},
+      "questions": [],
+      "active": false,
+      "answerAvailable": false
+    },
     "405710": {
       "quizId": "544167405",
       "position": 2,
@@ -4997,6 +5892,92 @@
         }
       },
       "questions": [],
+      "active": false,
+      "answerAvailable": false
+    },
+    "421780": {
+      "quizId": "991652758",
+      "position": 4,
+      "isoTimeLastQuestionStarted": "2023-11-01T11:22:24.250Z",
+      "players": {},
+      "questions": [
+        {
+          "id": "4e563892-bc69-4311-b06a-f1e68323e29e",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "1aacd6fb-b2d0-42a0-9ff1-10bc3dc32051",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "a47eacdb-7a3e-422d-814f-f9a28888ed2b",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "99241710-b8ae-42d1-a48f-d636cb3cd131",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
       "active": false,
       "answerAvailable": false
     },
@@ -5620,6 +6601,54 @@
           ],
           "photo": "data:image/jpeg;base64,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",
           "video": ""
+        }
+      ],
+      "active": false,
+      "answerAvailable": false
+    },
+    "448415": {
+      "quizId": "109710994",
+      "position": 2,
+      "isoTimeLastQuestionStarted": "2023-11-30T10:22:14.402Z",
+      "players": {},
+      "questions": [
+        {
+          "id": "6f11f9c8-de75-4f82-9628-6d4d1b90dabe",
+          "str": "a",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "812a9ccb-eda4-47f9-9cfc-9131e7f62ea3",
+          "str": "b",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
         }
       ],
       "active": false,
@@ -6498,6 +7527,15 @@
       "active": false,
       "answerAvailable": false
     },
+    "492023": {
+      "quizId": "992454472",
+      "position": -1,
+      "isoTimeLastQuestionStarted": null,
+      "players": {},
+      "questions": [],
+      "active": false,
+      "answerAvailable": false
+    },
     "498014": {
       "quizId": "754412335",
       "position": 2,
@@ -7186,6 +8224,73 @@
       "active": false,
       "answerAvailable": false
     },
+    "518758": {
+      "quizId": "153765138",
+      "position": -1,
+      "isoTimeLastQuestionStarted": null,
+      "players": {},
+      "questions": [
+        {
+          "id": "e07b85c6-f9de-4c9b-9cd6-791e197ac758",
+          "str": "do you think this is a good idea?",
+          "time": "5",
+          "type": "single",
+          "point": "10",
+          "choice": [
+            "yes",
+            "no",
+            "maybe",
+            "abs"
+          ],
+          "answer": [
+            true,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "86b38b71-af11-44bd-bd38-c4999b78c75e",
+          "str": "could you please like it? give me the best idea about it",
+          "time": "5",
+          "type": "single",
+          "point": "10",
+          "choice": [
+            "jogging",
+            "running",
+            "swimming",
+            "skipping"
+          ],
+          "answer": [
+            true,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "0161b1c2-5122-4d28-bfd2-39d00201655d",
+          "str": "Could you please give me some idea about your job?",
+          "time": "15",
+          "type": "multiple",
+          "point": "15",
+          "choice": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "answer": [
+            false,
+            false,
+            true,
+            true
+          ]
+        }
+      ],
+      "active": false,
+      "answerAvailable": false
+    },
     "520714": {
       "quizId": "224726135",
       "position": -1,
@@ -7456,6 +8561,54 @@
       "active": false,
       "answerAvailable": true
     },
+    "539201": {
+      "quizId": "109710994",
+      "position": 2,
+      "isoTimeLastQuestionStarted": "2023-11-30T10:12:54.811Z",
+      "players": {},
+      "questions": [
+        {
+          "id": "6f11f9c8-de75-4f82-9628-6d4d1b90dabe",
+          "str": "a",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "812a9ccb-eda4-47f9-9cfc-9131e7f62ea3",
+          "str": "b",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "active": false,
+      "answerAvailable": false
+    },
     "545643": {
       "quizId": "544167405",
       "position": -1,
@@ -7602,6 +8755,15 @@
       "active": false,
       "answerAvailable": true
     },
+    "548302": {
+      "quizId": "116073719",
+      "position": -1,
+      "isoTimeLastQuestionStarted": null,
+      "players": {},
+      "questions": [],
+      "active": true,
+      "answerAvailable": false
+    },
     "548418": {
       "quizId": "614107920",
       "position": -1,
@@ -7648,6 +8810,120 @@
       "active": true,
       "answerAvailable": false
     },
+    "553235": {
+      "quizId": "153765138",
+      "position": 5,
+      "isoTimeLastQuestionStarted": "2023-11-01T08:26:44.388Z",
+      "players": {},
+      "questions": [
+        {
+          "id": "e07b85c6-f9de-4c9b-9cd6-791e197ac758",
+          "str": "do you think this is a good idea?",
+          "time": "5",
+          "type": "single",
+          "point": "10",
+          "choice": [
+            "yes",
+            "no",
+            "maybe",
+            "abs"
+          ],
+          "answer": [
+            true,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "86b38b71-af11-44bd-bd38-c4999b78c75e",
+          "str": "could you please like it? give me the best idea about it",
+          "time": "5",
+          "type": "single",
+          "point": "10",
+          "choice": [
+            "jogging",
+            "running",
+            "swimming",
+            "skipping"
+          ],
+          "answer": [
+            true,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "0161b1c2-5122-4d28-bfd2-39d00201655d",
+          "str": "Could you please give me some idea about your job?",
+          "time": "15",
+          "type": "multiple",
+          "point": "15",
+          "choice": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "answer": [
+            false,
+            false,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "3b67a957-3079-4b1a-9a1a-6052891269be",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "e4e0cd78-a9da-41a8-a6c4-46a1b41d64f1",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "active": false,
+      "answerAvailable": false
+    },
+    "555177": {
+      "quizId": "998537045",
+      "position": 0,
+      "isoTimeLastQuestionStarted": "2023-11-01T11:29:58.977Z",
+      "players": {},
+      "questions": [],
+      "active": false,
+      "answerAvailable": false
+    },
     "557282": {
       "quizId": "897141622",
       "position": -1,
@@ -7680,6 +8956,178 @@
         }
       ],
       "active": true,
+      "answerAvailable": false
+    },
+    "558605": {
+      "quizId": "553366544",
+      "position": -1,
+      "isoTimeLastQuestionStarted": null,
+      "players": {},
+      "questions": [],
+      "active": false,
+      "answerAvailable": false
+    },
+    "560014": {
+      "quizId": "109710994",
+      "position": 2,
+      "isoTimeLastQuestionStarted": "2023-11-30T09:59:13.202Z",
+      "players": {},
+      "questions": [
+        {
+          "id": "6f11f9c8-de75-4f82-9628-6d4d1b90dabe",
+          "str": "a",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "812a9ccb-eda4-47f9-9cfc-9131e7f62ea3",
+          "str": "b",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "active": false,
+      "answerAvailable": false
+    },
+    "560930": {
+      "quizId": "360831805",
+      "position": 1,
+      "isoTimeLastQuestionStarted": "2023-11-01T11:25:23.348Z",
+      "players": {},
+      "questions": [
+        {
+          "id": "a53d2050-7f9f-45a0-87af-73cab511f904",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "active": false,
+      "answerAvailable": false
+    },
+    "563673": {
+      "quizId": "413942398",
+      "position": 4,
+      "isoTimeLastQuestionStarted": "2023-11-01T11:22:57.300Z",
+      "players": {},
+      "questions": [
+        {
+          "id": "d298a2c4-36b4-469d-9425-5202b618ae30",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "3ad4cece-e8e4-4b26-9f14-a7635bebe616",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "b32f1249-d93d-4b30-8272-bf8188d5dd38",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "0a4a65d4-4986-4180-9ad9-d66bdbcfa797",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "active": false,
       "answerAvailable": false
     },
     "564752": {
@@ -8011,6 +9459,150 @@
           ],
           "photo": "data:image/jpeg;base64,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",
           "video": ""
+        }
+      ],
+      "active": false,
+      "answerAvailable": false
+    },
+    "578082": {
+      "quizId": "343815398",
+      "position": -1,
+      "isoTimeLastQuestionStarted": null,
+      "players": {},
+      "questions": [
+        {
+          "id": "13a88174-c706-4fe3-86a7-6886af7a05d7",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "05a7795a-8241-4699-a36f-cb5caf6a2c32",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "active": true,
+      "answerAvailable": false
+    },
+    "579444": {
+      "quizId": "109710994",
+      "position": 0,
+      "isoTimeLastQuestionStarted": "2023-11-30T09:59:27.067Z",
+      "players": {},
+      "questions": [
+        {
+          "id": "6f11f9c8-de75-4f82-9628-6d4d1b90dabe",
+          "str": "a",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "812a9ccb-eda4-47f9-9cfc-9131e7f62ea3",
+          "str": "b",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "active": false,
+      "answerAvailable": true
+    },
+    "587122": {
+      "quizId": "109710994",
+      "position": 2,
+      "isoTimeLastQuestionStarted": "2023-11-30T10:12:22.764Z",
+      "players": {},
+      "questions": [
+        {
+          "id": "6f11f9c8-de75-4f82-9628-6d4d1b90dabe",
+          "str": "a",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "812a9ccb-eda4-47f9-9cfc-9131e7f62ea3",
+          "str": "b",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
         }
       ],
       "active": false,
@@ -8477,6 +10069,159 @@
       "active": false,
       "answerAvailable": false
     },
+    "600492": {
+      "quizId": "109710994",
+      "position": 2,
+      "isoTimeLastQuestionStarted": "2023-11-30T10:09:52.214Z",
+      "players": {},
+      "questions": [
+        {
+          "id": "6f11f9c8-de75-4f82-9628-6d4d1b90dabe",
+          "str": "a",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "812a9ccb-eda4-47f9-9cfc-9131e7f62ea3",
+          "str": "b",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "active": false,
+      "answerAvailable": false
+    },
+    "601874": {
+      "quizId": "153765138",
+      "position": -1,
+      "isoTimeLastQuestionStarted": null,
+      "players": {},
+      "questions": [
+        {
+          "id": "e07b85c6-f9de-4c9b-9cd6-791e197ac758",
+          "str": "do you think this is a good idea?",
+          "time": "5",
+          "type": "single",
+          "point": "10",
+          "choice": [
+            "yes",
+            "no",
+            "maybe",
+            "abs"
+          ],
+          "answer": [
+            true,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "86b38b71-af11-44bd-bd38-c4999b78c75e",
+          "str": "could you please like it? give me the best idea about it",
+          "time": "5",
+          "type": "single",
+          "point": "10",
+          "choice": [
+            "jogging",
+            "running",
+            "swimming",
+            "skipping"
+          ],
+          "answer": [
+            true,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "0161b1c2-5122-4d28-bfd2-39d00201655d",
+          "str": "Could you please give me some idea about your job?",
+          "time": "15",
+          "type": "multiple",
+          "point": "15",
+          "choice": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "answer": [
+            false,
+            false,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "3b67a957-3079-4b1a-9a1a-6052891269be",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "e4e0cd78-a9da-41a8-a6c4-46a1b41d64f1",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "active": false,
+      "answerAvailable": false
+    },
     "602784": {
       "quizId": "544167405",
       "position": 2,
@@ -8556,6 +10301,73 @@
           ],
           "photo": "data:image/jpeg;base64,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",
           "video": ""
+        }
+      ],
+      "active": false,
+      "answerAvailable": true
+    },
+    "604530": {
+      "quizId": "153765138",
+      "position": 3,
+      "isoTimeLastQuestionStarted": "2023-11-01T11:26:19.299Z",
+      "players": {},
+      "questions": [
+        {
+          "id": "e07b85c6-f9de-4c9b-9cd6-791e197ac758",
+          "str": "do you think this is a good idea?",
+          "time": "5",
+          "type": "single",
+          "point": "10",
+          "choice": [
+            "yes",
+            "no",
+            "maybe",
+            "abs"
+          ],
+          "answer": [
+            true,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "86b38b71-af11-44bd-bd38-c4999b78c75e",
+          "str": "could you please like it? give me the best idea about it",
+          "time": "5",
+          "type": "single",
+          "point": "10",
+          "choice": [
+            "jogging",
+            "running",
+            "swimming",
+            "skipping"
+          ],
+          "answer": [
+            true,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "0161b1c2-5122-4d28-bfd2-39d00201655d",
+          "str": "Could you please give me some idea about your job?",
+          "time": "15",
+          "type": "multiple",
+          "point": "15",
+          "choice": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "answer": [
+            false,
+            false,
+            true,
+            true
+          ]
         }
       ],
       "active": false,
@@ -8646,6 +10458,54 @@
       "active": false,
       "answerAvailable": false
     },
+    "610776": {
+      "quizId": "109710994",
+      "position": 2,
+      "isoTimeLastQuestionStarted": "2023-11-30T10:44:15.073Z",
+      "players": {},
+      "questions": [
+        {
+          "id": "6f11f9c8-de75-4f82-9628-6d4d1b90dabe",
+          "str": "a",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "812a9ccb-eda4-47f9-9cfc-9131e7f62ea3",
+          "str": "b",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "active": false,
+      "answerAvailable": false
+    },
     "610951": {
       "quizId": "544167405",
       "position": 2,
@@ -8727,6 +10587,54 @@
       ],
       "active": false,
       "answerAvailable": true
+    },
+    "611508": {
+      "quizId": "951419892",
+      "position": -1,
+      "isoTimeLastQuestionStarted": null,
+      "players": {},
+      "questions": [
+        {
+          "id": "dc4b5024-2b8c-4726-9476-417724e68d4a",
+          "str": "a",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "5d245c70-16ce-4caa-ba4a-ff5a026cfc80",
+          "str": "b",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "active": false,
+      "answerAvailable": false
     },
     "617928": {
       "quizId": "617231170",
@@ -8984,6 +10892,54 @@
       "active": false,
       "answerAvailable": false
     },
+    "638598": {
+      "quizId": "109710994",
+      "position": -1,
+      "isoTimeLastQuestionStarted": null,
+      "players": {},
+      "questions": [
+        {
+          "id": "6f11f9c8-de75-4f82-9628-6d4d1b90dabe",
+          "str": "a",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "812a9ccb-eda4-47f9-9cfc-9131e7f62ea3",
+          "str": "b",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "active": true,
+      "answerAvailable": false
+    },
     "641847": {
       "quizId": "544167405",
       "position": 2,
@@ -9045,6 +11001,101 @@
       ],
       "active": false,
       "answerAvailable": true
+    },
+    "646846": {
+      "quizId": "947116556",
+      "position": 0,
+      "isoTimeLastQuestionStarted": "2023-11-30T00:21:05.053Z",
+      "players": {},
+      "questions": [],
+      "active": false,
+      "answerAvailable": false
+    },
+    "658045": {
+      "quizId": "998537045",
+      "position": -1,
+      "isoTimeLastQuestionStarted": null,
+      "players": {},
+      "questions": [
+        {
+          "id": "1e368c11-7266-4d59-9ab6-af5b736e70a4",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "a741165a-601b-414a-8fd6-633dfc87f7ce",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "840a6142-1040-4e03-95b4-077ecd7c0f79",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "b8988a7e-562e-4c4f-8257-f8f9ceefc7d2",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "active": false,
+      "answerAvailable": false
     },
     "670739": {
       "quizId": "617231170",
@@ -9260,6 +11311,15 @@
           "video": ""
         }
       ],
+      "active": false,
+      "answerAvailable": false
+    },
+    "684053": {
+      "quizId": "991652758",
+      "position": 0,
+      "isoTimeLastQuestionStarted": "2023-11-01T11:21:47.943Z",
+      "players": {},
+      "questions": [],
       "active": false,
       "answerAvailable": false
     },
@@ -9748,6 +11808,101 @@
       "active": false,
       "answerAvailable": true
     },
+    "719467": {
+      "quizId": "998537045",
+      "position": -1,
+      "isoTimeLastQuestionStarted": null,
+      "players": {},
+      "questions": [],
+      "active": false,
+      "answerAvailable": false
+    },
+    "724175": {
+      "quizId": "573007324",
+      "position": 4,
+      "isoTimeLastQuestionStarted": "2023-11-30T00:29:43.067Z",
+      "players": {},
+      "questions": [
+        {
+          "id": "a998ea2b-ca53-4255-91b6-93299bfd25b2",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "c5267166-967b-4595-bb7c-47084e88ab84",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "f2007512-c093-4771-8667-36f1f51b4c84",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "f943a614-82f9-452b-b792-044f448c0f3c",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "active": false,
+      "answerAvailable": false
+    },
     "725525": {
       "quizId": "617231170",
       "position": 2,
@@ -9833,6 +11988,73 @@
         }
       },
       "questions": [],
+      "active": false,
+      "answerAvailable": false
+    },
+    "735365": {
+      "quizId": "573007324",
+      "position": 3,
+      "isoTimeLastQuestionStarted": "2023-11-30T00:21:59.888Z",
+      "players": {},
+      "questions": [
+        {
+          "id": "a998ea2b-ca53-4255-91b6-93299bfd25b2",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "c5267166-967b-4595-bb7c-47084e88ab84",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "f2007512-c093-4771-8667-36f1f51b4c84",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
       "active": false,
       "answerAvailable": false
     },
@@ -10571,6 +12793,73 @@
       "active": false,
       "answerAvailable": false
     },
+    "783348": {
+      "quizId": "153765138",
+      "position": -1,
+      "isoTimeLastQuestionStarted": null,
+      "players": {},
+      "questions": [
+        {
+          "id": "e07b85c6-f9de-4c9b-9cd6-791e197ac758",
+          "str": "do you think this is a good idea?",
+          "time": "5",
+          "type": "single",
+          "point": "10",
+          "choice": [
+            "yes",
+            "no",
+            "maybe",
+            "abs"
+          ],
+          "answer": [
+            true,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "86b38b71-af11-44bd-bd38-c4999b78c75e",
+          "str": "could you please like it? give me the best idea about it",
+          "time": "5",
+          "type": "single",
+          "point": "10",
+          "choice": [
+            "jogging",
+            "running",
+            "swimming",
+            "skipping"
+          ],
+          "answer": [
+            true,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "0161b1c2-5122-4d28-bfd2-39d00201655d",
+          "str": "Could you please give me some idea about your job?",
+          "time": "15",
+          "type": "multiple",
+          "point": "15",
+          "choice": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "answer": [
+            false,
+            false,
+            true,
+            true
+          ]
+        }
+      ],
+      "active": false,
+      "answerAvailable": false
+    },
     "791221": {
       "quizId": "544167405",
       "position": 2,
@@ -10866,6 +13155,111 @@
       },
       "questions": [],
       "active": true,
+      "answerAvailable": false
+    },
+    "795798": {
+      "quizId": "153765138",
+      "position": -1,
+      "isoTimeLastQuestionStarted": null,
+      "players": {},
+      "questions": [
+        {
+          "id": "e07b85c6-f9de-4c9b-9cd6-791e197ac758",
+          "str": "do you think this is a good idea?",
+          "time": "5",
+          "type": "single",
+          "point": "10",
+          "choice": [
+            "yes",
+            "no",
+            "maybe",
+            "abs"
+          ],
+          "answer": [
+            true,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "86b38b71-af11-44bd-bd38-c4999b78c75e",
+          "str": "could you please like it? give me the best idea about it",
+          "time": "5",
+          "type": "single",
+          "point": "10",
+          "choice": [
+            "jogging",
+            "running",
+            "swimming",
+            "skipping"
+          ],
+          "answer": [
+            true,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "0161b1c2-5122-4d28-bfd2-39d00201655d",
+          "str": "Could you please give me some idea about your job?",
+          "time": "15",
+          "type": "multiple",
+          "point": "15",
+          "choice": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "answer": [
+            false,
+            false,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "3b67a957-3079-4b1a-9a1a-6052891269be",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "e4e0cd78-a9da-41a8-a6c4-46a1b41d64f1",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "active": false,
       "answerAvailable": false
     },
     "798427": {
@@ -11574,6 +13968,121 @@
       "active": false,
       "answerAvailable": false
     },
+    "835190": {
+      "quizId": "153765138",
+      "position": 3,
+      "isoTimeLastQuestionStarted": "2023-11-01T08:26:17.489Z",
+      "players": {},
+      "questions": [
+        {
+          "id": "e07b85c6-f9de-4c9b-9cd6-791e197ac758",
+          "str": "do you think this is a good idea?",
+          "time": "5",
+          "type": "single",
+          "point": "10",
+          "choice": [
+            "yes",
+            "no",
+            "maybe",
+            "abs"
+          ],
+          "answer": [
+            true,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "86b38b71-af11-44bd-bd38-c4999b78c75e",
+          "str": "could you please like it? give me the best idea about it",
+          "time": "5",
+          "type": "single",
+          "point": "10",
+          "choice": [
+            "jogging",
+            "running",
+            "swimming",
+            "skipping"
+          ],
+          "answer": [
+            true,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "0161b1c2-5122-4d28-bfd2-39d00201655d",
+          "str": "Could you please give me some idea about your job?",
+          "time": "15",
+          "type": "multiple",
+          "point": "15",
+          "choice": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "answer": [
+            false,
+            false,
+            true,
+            true
+          ]
+        }
+      ],
+      "active": false,
+      "answerAvailable": true
+    },
+    "844548": {
+      "quizId": "663405605",
+      "position": -1,
+      "isoTimeLastQuestionStarted": null,
+      "players": {},
+      "questions": [
+        {
+          "id": "2a7381ca-967e-4dde-9380-02d4b51d4da4",
+          "str": "a",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "abf35c90-2adb-4e1b-b34a-3c4aa1f293ee",
+          "str": "b",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "active": false,
+      "answerAvailable": false
+    },
     "858079": {
       "quizId": "544167405",
       "position": 2,
@@ -11658,6 +14167,159 @@
       ],
       "active": false,
       "answerAvailable": true
+    },
+    "860043": {
+      "quizId": "153765138",
+      "position": 5,
+      "isoTimeLastQuestionStarted": "2023-11-01T08:41:15.929Z",
+      "players": {},
+      "questions": [
+        {
+          "id": "e07b85c6-f9de-4c9b-9cd6-791e197ac758",
+          "str": "do you think this is a good idea?",
+          "time": "5",
+          "type": "single",
+          "point": "10",
+          "choice": [
+            "yes",
+            "no",
+            "maybe",
+            "abs"
+          ],
+          "answer": [
+            true,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "86b38b71-af11-44bd-bd38-c4999b78c75e",
+          "str": "could you please like it? give me the best idea about it",
+          "time": "5",
+          "type": "single",
+          "point": "10",
+          "choice": [
+            "jogging",
+            "running",
+            "swimming",
+            "skipping"
+          ],
+          "answer": [
+            true,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "0161b1c2-5122-4d28-bfd2-39d00201655d",
+          "str": "Could you please give me some idea about your job?",
+          "time": "15",
+          "type": "multiple",
+          "point": "15",
+          "choice": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "answer": [
+            false,
+            false,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "3b67a957-3079-4b1a-9a1a-6052891269be",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "e4e0cd78-a9da-41a8-a6c4-46a1b41d64f1",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "active": false,
+      "answerAvailable": false
+    },
+    "860464": {
+      "quizId": "663405605",
+      "position": -1,
+      "isoTimeLastQuestionStarted": null,
+      "players": {},
+      "questions": [
+        {
+          "id": "2a7381ca-967e-4dde-9380-02d4b51d4da4",
+          "str": "a",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "abf35c90-2adb-4e1b-b34a-3c4aa1f293ee",
+          "str": "b",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "active": false,
+      "answerAvailable": false
     },
     "863101": {
       "quizId": "544167405",
@@ -11984,6 +14646,54 @@
       "active": false,
       "answerAvailable": false
     },
+    "874699": {
+      "quizId": "109710994",
+      "position": 2,
+      "isoTimeLastQuestionStarted": "2023-11-30T10:01:31.844Z",
+      "players": {},
+      "questions": [
+        {
+          "id": "6f11f9c8-de75-4f82-9628-6d4d1b90dabe",
+          "str": "a",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "812a9ccb-eda4-47f9-9cfc-9131e7f62ea3",
+          "str": "b",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "active": false,
+      "answerAvailable": false
+    },
     "886009": {
       "quizId": "544167405",
       "position": 2,
@@ -12045,6 +14755,54 @@
       ],
       "active": false,
       "answerAvailable": true
+    },
+    "891887": {
+      "quizId": "343815398",
+      "position": -1,
+      "isoTimeLastQuestionStarted": null,
+      "players": {},
+      "questions": [
+        {
+          "id": "13a88174-c706-4fe3-86a7-6886af7a05d7",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "05a7795a-8241-4699-a36f-cb5caf6a2c32",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "active": false,
+      "answerAvailable": false
     },
     "894774": {
       "quizId": "754412335",
@@ -13010,6 +15768,15 @@
       "active": false,
       "answerAvailable": false
     },
+    "932135": {
+      "quizId": "109710994",
+      "position": -1,
+      "isoTimeLastQuestionStarted": null,
+      "players": {},
+      "questions": [],
+      "active": false,
+      "answerAvailable": false
+    },
     "934191": {
       "quizId": "754412335",
       "position": 3,
@@ -13134,6 +15901,150 @@
       "players": {},
       "questions": [],
       "active": true,
+      "answerAvailable": false
+    },
+    "935196": {
+      "quizId": "951419892",
+      "position": -1,
+      "isoTimeLastQuestionStarted": null,
+      "players": {},
+      "questions": [
+        {
+          "id": "dc4b5024-2b8c-4726-9476-417724e68d4a",
+          "str": "a",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "5d245c70-16ce-4caa-ba4a-ff5a026cfc80",
+          "str": "b",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "active": false,
+      "answerAvailable": false
+    },
+    "935929": {
+      "quizId": "109710994",
+      "position": 2,
+      "isoTimeLastQuestionStarted": "2023-11-30T10:36:49.254Z",
+      "players": {},
+      "questions": [
+        {
+          "id": "6f11f9c8-de75-4f82-9628-6d4d1b90dabe",
+          "str": "a",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "812a9ccb-eda4-47f9-9cfc-9131e7f62ea3",
+          "str": "b",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "active": false,
+      "answerAvailable": false
+    },
+    "937426": {
+      "quizId": "109710994",
+      "position": 2,
+      "isoTimeLastQuestionStarted": "2023-11-30T10:12:31.520Z",
+      "players": {},
+      "questions": [
+        {
+          "id": "6f11f9c8-de75-4f82-9628-6d4d1b90dabe",
+          "str": "a",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "812a9ccb-eda4-47f9-9cfc-9131e7f62ea3",
+          "str": "b",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "active": false,
       "answerAvailable": false
     },
     "946798": {
@@ -13408,6 +16319,216 @@
       "active": false,
       "answerAvailable": false
     },
+    "960575": {
+      "quizId": "153765138",
+      "position": 5,
+      "isoTimeLastQuestionStarted": "2023-11-01T11:26:00.492Z",
+      "players": {},
+      "questions": [
+        {
+          "id": "e07b85c6-f9de-4c9b-9cd6-791e197ac758",
+          "str": "do you think this is a good idea?",
+          "time": "5",
+          "type": "single",
+          "point": "10",
+          "choice": [
+            "yes",
+            "no",
+            "maybe",
+            "abs"
+          ],
+          "answer": [
+            true,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "86b38b71-af11-44bd-bd38-c4999b78c75e",
+          "str": "could you please like it? give me the best idea about it",
+          "time": "5",
+          "type": "single",
+          "point": "10",
+          "choice": [
+            "jogging",
+            "running",
+            "swimming",
+            "skipping"
+          ],
+          "answer": [
+            true,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "0161b1c2-5122-4d28-bfd2-39d00201655d",
+          "str": "Could you please give me some idea about your job?",
+          "time": "15",
+          "type": "multiple",
+          "point": "15",
+          "choice": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "answer": [
+            false,
+            false,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "3b67a957-3079-4b1a-9a1a-6052891269be",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "e4e0cd78-a9da-41a8-a6c4-46a1b41d64f1",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "active": false,
+      "answerAvailable": false
+    },
+    "961495": {
+      "quizId": "153765138",
+      "position": -1,
+      "isoTimeLastQuestionStarted": null,
+      "players": {},
+      "questions": [
+        {
+          "id": "e07b85c6-f9de-4c9b-9cd6-791e197ac758",
+          "str": "do you think this is a good idea?",
+          "time": "5",
+          "type": "single",
+          "point": "10",
+          "choice": [
+            "yes",
+            "no",
+            "maybe",
+            "abs"
+          ],
+          "answer": [
+            true,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "86b38b71-af11-44bd-bd38-c4999b78c75e",
+          "str": "could you please like it? give me the best idea about it",
+          "time": "5",
+          "type": "single",
+          "point": "10",
+          "choice": [
+            "jogging",
+            "running",
+            "swimming",
+            "skipping"
+          ],
+          "answer": [
+            true,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "0161b1c2-5122-4d28-bfd2-39d00201655d",
+          "str": "Could you please give me some idea about your job?",
+          "time": "15",
+          "type": "multiple",
+          "point": "15",
+          "choice": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "answer": [
+            false,
+            false,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "3b67a957-3079-4b1a-9a1a-6052891269be",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "e4e0cd78-a9da-41a8-a6c4-46a1b41d64f1",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "active": false,
+      "answerAvailable": false
+    },
     "968129": {
       "quizId": "544167405",
       "position": 2,
@@ -13492,6 +16613,111 @@
       ],
       "active": false,
       "answerAvailable": true
+    },
+    "969517": {
+      "quizId": "153765138",
+      "position": -1,
+      "isoTimeLastQuestionStarted": null,
+      "players": {},
+      "questions": [
+        {
+          "id": "e07b85c6-f9de-4c9b-9cd6-791e197ac758",
+          "str": "do you think this is a good idea?",
+          "time": "5",
+          "type": "single",
+          "point": "10",
+          "choice": [
+            "yes",
+            "no",
+            "maybe",
+            "abs"
+          ],
+          "answer": [
+            true,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "86b38b71-af11-44bd-bd38-c4999b78c75e",
+          "str": "could you please like it? give me the best idea about it",
+          "time": "5",
+          "type": "single",
+          "point": "10",
+          "choice": [
+            "jogging",
+            "running",
+            "swimming",
+            "skipping"
+          ],
+          "answer": [
+            true,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "0161b1c2-5122-4d28-bfd2-39d00201655d",
+          "str": "Could you please give me some idea about your job?",
+          "time": "15",
+          "type": "multiple",
+          "point": "15",
+          "choice": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "answer": [
+            false,
+            false,
+            true,
+            true
+          ]
+        },
+        {
+          "id": "3b67a957-3079-4b1a-9a1a-6052891269be",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "e4e0cd78-a9da-41a8-a6c4-46a1b41d64f1",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "active": false,
+      "answerAvailable": false
     },
     "970322": {
       "quizId": "544167405",
@@ -13635,6 +16861,178 @@
       "active": false,
       "answerAvailable": true
     },
+    "979798": {
+      "quizId": "998537045",
+      "position": 2,
+      "isoTimeLastQuestionStarted": "2023-11-01T11:39:41.255Z",
+      "players": {},
+      "questions": [
+        {
+          "id": "1e368c11-7266-4d59-9ab6-af5b736e70a4",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "a741165a-601b-414a-8fd6-633dfc87f7ce",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "840a6142-1040-4e03-95b4-077ecd7c0f79",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "b8988a7e-562e-4c4f-8257-f8f9ceefc7d2",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "active": false,
+      "answerAvailable": true
+    },
+    "980710": {
+      "quizId": "573007324",
+      "position": 4,
+      "isoTimeLastQuestionStarted": "2023-11-30T00:22:31.465Z",
+      "players": {},
+      "questions": [
+        {
+          "id": "a998ea2b-ca53-4255-91b6-93299bfd25b2",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "c5267166-967b-4595-bb7c-47084e88ab84",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "f2007512-c093-4771-8667-36f1f51b4c84",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "f943a614-82f9-452b-b792-044f448c0f3c",
+          "str": "",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "active": false,
+      "answerAvailable": false
+    },
     "981789": {
       "quizId": "617231170",
       "position": 2,
@@ -13691,6 +17089,102 @@
       ],
       "active": false,
       "answerAvailable": true
+    },
+    "987189": {
+      "quizId": "560567323",
+      "position": -1,
+      "isoTimeLastQuestionStarted": null,
+      "players": {},
+      "questions": [
+        {
+          "id": "7f6624df-1e82-4db8-816d-88be8aa31099",
+          "str": "do you think this is a chance?",
+          "time": "15",
+          "type": "multiple",
+          "point": "10",
+          "choice": [
+            "yes",
+            "no",
+            "ok",
+            "not ok"
+          ],
+          "answer": [
+            true,
+            true,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "a7ebd627-7362-4267-bd7c-8de2224e0103",
+          "str": "this is a track.",
+          "time": "5",
+          "type": "multiple",
+          "point": "5",
+          "choice": [
+            "yes this is a track ",
+            "no, what do you think",
+            "nono, absolute nono",
+            "yeye"
+          ],
+          "answer": [
+            true,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "active": false,
+      "answerAvailable": false
+    },
+    "988236": {
+      "quizId": "109710994",
+      "position": 2,
+      "isoTimeLastQuestionStarted": "2023-11-30T09:58:57.329Z",
+      "players": {},
+      "questions": [
+        {
+          "id": "6f11f9c8-de75-4f82-9628-6d4d1b90dabe",
+          "str": "a",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "id": "812a9ccb-eda4-47f9-9cfc-9131e7f62ea3",
+          "str": "b",
+          "time": "",
+          "type": "",
+          "point": "",
+          "choice": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answer": [
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "active": false,
+      "answerAvailable": false
     },
     "991229": {
       "quizId": "544167405",

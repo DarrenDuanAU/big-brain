@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import {
   useParams,
+  useNavigate
 } from 'react-router-dom';
 import APICall from '../../apis/APICall';
 import Topbar from '../shared/Topbar/Topbar';
@@ -14,12 +15,13 @@ function QuizEdit () {
   const [showAddEditQuestionModal, setShowAddEditQuestionModal] = useState(false);
   const [targetQuestion, setTargetQuestion] = useState(null);
   const params = useParams();
+  const navigate = useNavigate();
 
   useEffect(() => {
-    fetchData();
+    fetchQuizData();
   }, [])
 
-  const fetchData = async () => {
+  const fetchQuizData = async () => {
     const res = await APICall('/admin/quiz/' + params.quizId, 'GET', null)
     setFullQuizData(res)
   }
@@ -32,10 +34,10 @@ function QuizEdit () {
   return (
     <div className={styles.pageWrapper}>
       <Topbar />
+      <div className={styles.toDashboardButtonContainer}>
+        <Button variant='contained' onClick={() => navigate('/dashboard')}>to dashboard</Button>
+      </div>
       <div className={styles.contentWrapper}>
-        <div className={styles.buttonsContainer}>
-          <Button variant='contained' onClick={actionAddQuestionHandler}>add New Question</Button>
-        </div>
         <div className={styles.tableWrapper}>
           <QuestionList
             setTargetQuestion ={setTargetQuestion}
@@ -44,6 +46,9 @@ function QuizEdit () {
             setFullQuizData={setFullQuizData}
             params={params}
           />
+        </div>
+        <div className={styles.buttonsContainer}>
+          <Button variant='contained' onClick={actionAddQuestionHandler}>add New Question</Button>
         </div>
       </div>
 

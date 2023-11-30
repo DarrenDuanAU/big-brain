@@ -1,33 +1,29 @@
 import React from 'react';
-import styles from './SessionModal.module.css';
-// import Button from '@mui/material/Button';
-// import APICall from '../../../../apis/APICall';
-import Icon from '@mui/material/Icon';
-// import { v4 } from 'uuid';
-// import {
-//   IsValidQuestion
-// } from '../../service';
+// import styles from './SessionModal.module.css';
+// import Icon from '@mui/material/Icon';
+import Modal from '../../../../../../../Modal';
 
 const SessionModal = ({
   advanceSession,
   endSession,
-  setVisible
+  setVisible,
+  currentSession,
 }) => {
   return (
-    <div className={styles.pageWrapper}>
-      <div className={styles.background} onClick={() => setVisible(false)}>
-      </div>
-
-      <div className={styles.modalWrapper}>
-        <div className={styles.topbar}>
-          <div className={styles.crossIcon} onClick={() => setVisible(false)}>
-            <Icon sx={{ fontSize: 30 }}>add_circle</Icon>
-          </div>
-        </div>
-        <button onClick={advanceSession}>advance</button>
-        <button onClick={endSession}>end</button>
-      </div>
-    </div>
+    <Modal setVisible={setVisible}>
+      {currentSession.id}
+      {currentSession.questions.map((question) => (
+        question.str
+      ))}
+      {currentSession.questions.map((question, index) => {
+        if (currentSession.stage !== -1 && index === currentSession.stage) {
+          return question.str;
+        }
+        return null;
+      })}
+      <button onClick={advanceSession}>advance</button>
+      <button onClick={endSession}>end</button>
+    </Modal>
   );
 };
 

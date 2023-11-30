@@ -19,9 +19,6 @@ const Topbar = () => {
 
   return (
     <nav className={styles.pageWrapper}>
-      <div className={styles.leftContainer}>
-        <Button variant='contained' onClick={() => navigate('/dashboard')}>to dashboard</Button>
-      </div>
       <div className={styles.rightContainer}>
         <Button variant="contained" onClick ={ logout }>Logout</Button>
       </div>
