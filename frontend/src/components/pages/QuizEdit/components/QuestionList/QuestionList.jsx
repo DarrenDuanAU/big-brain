@@ -58,13 +58,13 @@ const QuestionList = ({
             </td>
             <td className={styles.colTwo}>{question.point} </td>
             <td className={styles.colThree}>{question.time} </td>
-            <td className={styles.colFour} >{question.choice.map((item, index) => (numberToChar(index) + ': ' + item)).join(' / ')}</td>
-            <td className={styles.colFive} >{question.answer.map((isAnswer, index) => {
+            <td className={styles.colFour} >{question.choices.map((item, index) => (numberToChar(index) + ': ' + item)).join(' / ')}</td>
+            <td className={styles.colFive} >{question.answers.map((isAnswer, index) => {
               if (isAnswer) {
                 return numberToChar(index);
               }
               return null
-            }).filter((choice) => choice != null).join('/')
+            }).filter((choices) => choices != null).join('/')
             }</td>
             <td className={styles.colSix}>
               <DropDown

@@ -15,15 +15,15 @@ const AddEditQuestionModal = ({
   fetchedQuestions,
   setFullQuizData
 }) => {
-  const choiceIndex = ['A', 'B', 'C', 'D'];
+  const choicesIndex = ['A', 'B', 'C', 'D'];
   const [questionInfo, setQuestionInfo] = useState({
     id: '',
     str: '',
     time: '',
     type: '',
     point: '',
-    choice: ['', '', '', ''],
-    answer: [false, false, false, false],
+    choices: ['', '', '', ''],
+    answers: [false, false, false, false],
   });
   const params = useParams();
 
@@ -35,8 +35,8 @@ const AddEditQuestionModal = ({
         time: targetQuestion.time,
         type: targetQuestion.type,
         point: targetQuestion.point,
-        choice: targetQuestion.choice,
-        answer: targetQuestion.answer,
+        choices: targetQuestion.choices,
+        answers: targetQuestion.answers,
       })
     }
   }, [])
@@ -54,8 +54,8 @@ const AddEditQuestionModal = ({
         time: questionInfo.time,
         type: questionInfo.type,
         point: questionInfo.point,
-        choice: questionInfo.choice,
-        answer: questionInfo.answer,
+        choices: questionInfo.choices,
+        answers: questionInfo.answers,
       }
     ];
     const res = await APICall('/admin/quiz/' + params.quizId, 'PUT', {
@@ -78,8 +78,8 @@ const AddEditQuestionModal = ({
         time: questionInfo.time,
         type: questionInfo.type,
         point: questionInfo.point,
-        choice: questionInfo.choice,
-        answer: questionInfo.answer,
+        choices: questionInfo.choices,
+        answers: questionInfo.answers,
       }
     ];
     const res = await APICall('/admin/quiz/' + params.quizId, 'PUT', {
@@ -187,30 +187,30 @@ const AddEditQuestionModal = ({
 
             <div className={styles.choicesWrapper} >
               <p>Choices:</p>
-              {choiceIndex.map((value, index) =>
+              {choicesIndex.map((value, index) =>
                 <div key={index} className={styles.choice}>
                   <label htmlFor='choice'>{value}.  </label>
                   <input
                     type="text" name='choice' autoComplete='off'
-                    value={questionInfo.choice[index]}
+                    value={questionInfo.choices[index]}
                     onChange={(e) => {
-                      const updatedChoice = [...questionInfo.choice];
+                      const updatedChoice = [...questionInfo.choices];
                       updatedChoice[index] = e.target.value;
                       setQuestionInfo({
                         ...questionInfo,
-                        choice: updatedChoice
+                        choices: updatedChoice
                       });
                     }}
                   />
                   <div className={styles.checkboxWrapper}>
                     <input type="checkbox"
-                      checked={questionInfo.answer[index]}
+                      checked={questionInfo.answers[index]}
                       onChange={(e) => {
-                        const updatedAnswer = [...questionInfo.answer];
+                        const updatedAnswer = [...questionInfo.answers];
                         updatedAnswer[index] = e.target.checked;
                         setQuestionInfo({
                           ...questionInfo,
-                          answer: updatedAnswer
+                          answers: updatedAnswer
                         })
                       }}
                     />
