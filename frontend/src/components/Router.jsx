@@ -2,8 +2,9 @@ import React from 'react';
 import CheckIn from './pages/CheckIn/CheckIn';
 import Dashboard from './pages/Dashboard/Dashboard';
 import QuizEdit from './pages/QuizEdit/QuizEdit';
+import Player from './pages/Player';
 import PlayJoin from './PlayJoin';
-import QuestionEdit from './QuestionEdit';
+// import QuestionEdit from './QuestionEdit';
 import Result from './Result';
 import PlayGame from './PlayGame'
 import GameWelcome from './GameWelcome'
@@ -41,8 +42,9 @@ function Router () {
             (<Route path="/Dashboard" element={ <Dashboard/> } />)
             {/* (<Route path="/QuizEdit" element={ <QuizEdit />}/>) */}
             (<Route path="/QuizEdit/:quizId" element={ <QuizEdit/>}/>)
-            (<Route path="/QuizEdit/:quizId/QuestionEdit/:questionId" element={ <QuestionEdit/>}/>)
+            {/* (<Route path="/QuizEdit/:quizId/QuestionEdit/:questionId" element={ <QuestionEdit/>}/>) */}
             (<Route path="/Result/:sessionId" element={ <Result/>} />)
+            (<Route path="/Player/:sessionId" element={<Player/>}/>)
             (<Route path="/PlayJoin" element={<PlayJoin/>}/>)
             (<Route path="/PlayJoin/:sessionId" element={ <GameWelcome/>}/>)
             (<Route path="/PlayJoin/:sessionId/:playerId" element={ <PlayGame/>}/>)
