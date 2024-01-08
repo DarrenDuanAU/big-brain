@@ -6,6 +6,7 @@ import {
   useNavigate
 } from 'react-router-dom';
 import SessionModal from './components/SessionModal';
+// import CustomizedButton from '../../../../../../UI/Button/CustomizedButton';
 // import Modal from './components/Modal';
 
 const Quiz = ({
@@ -81,8 +82,8 @@ const Quiz = ({
         </div>
         <div className={styles.buttons}>
           <Button variant='outlined' onClick={startSession}>start</Button>
-          <Button variant='outlined' onClick={editQuiz}>edit</Button>
-          <Button variant='contained' onClick={deleteQuiz}>delete</Button>
+          <Button variant='contained' onClick={editQuiz}>edit</Button>
+          <Button variant='outlined' color="secondary" onClick={deleteQuiz}>delete</Button>
         </div>
       </div>
       {sessionModalVisible &&
