@@ -136,6 +136,14 @@
       "active": null,
       "createdAt": "2023-04-11T01:04:43.334Z"
     },
+    "333297023": {
+      "name": "",
+      "owner": "",
+      "questions": [],
+      "thumbnail": null,
+      "active": null,
+      "createdAt": "2024-01-08T03:24:59.348Z"
+    },
     "522198734": {
       "name": "aa",
       "owner": "adfadf",
@@ -12174,6 +12182,15 @@
           "video": ""
         }
       ],
+      "active": false,
+      "answerAvailable": false
+    },
+    "755083": {
+      "quizId": "333297023",
+      "position": -1,
+      "isoTimeLastQuestionStarted": null,
+      "players": {},
+      "questions": [],
       "active": false,
       "answerAvailable": false
     },
