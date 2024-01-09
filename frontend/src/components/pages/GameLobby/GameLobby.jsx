@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import {
   useNavigate
 } from 'react-router-dom';
-import { BACKEND_PORT } from '../../../const';
 import PlayerAPICall from '../../apis/PlayerAPICall';
 
 const GameLobby = () => {
@@ -16,7 +15,7 @@ const GameLobby = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const data = await PlayerAPICall(BACKEND_PORT + '/play/join/' + sessionId, 'POST', { name: playerName });
+    const data = await PlayerAPICall('/play/join/' + sessionId, 'POST', { name: playerName });
     navigateToPlayerPanel(sessionId, data.playerId);
   };
 

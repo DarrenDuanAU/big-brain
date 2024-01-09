@@ -1,3 +1,5 @@
+import { BACKEND_PORT } from '../../const';
+
 const PlayerAPICall = async (path, method, payload) => {
   const options = {
     method: method,
@@ -9,7 +11,7 @@ const PlayerAPICall = async (path, method, payload) => {
     options.body = JSON.stringify(payload)
   }
   try {
-    const response = await fetch(path, options);
+    const response = await fetch(BACKEND_PORT + path, options);
     const data = await response.json();
 
     if (data) {
