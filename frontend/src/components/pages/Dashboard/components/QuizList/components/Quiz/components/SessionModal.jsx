@@ -12,7 +12,6 @@ const SessionModal = ({
   setVisible,
   currentSession,
 }) => {
-  const [sessionStatus, setSessionStatus] = useState('notStarted');
   const [linkCopied, setLinkCopied] = useState(false);
 
   const handleCopy = () => {
@@ -20,23 +19,16 @@ const SessionModal = ({
   };
 
   const handleAdvance = () => {
-    if (sessionStatus === 'notStarted') {
-      setSessionStatus('started')
-    }
-    if (currentSession.questions.length === currentSession.stage + 1) {
-      setSessionStatus('end')
-    }
     advanceSession();
   }
 
   return (
     <Modal setVisible={setVisible}>
       <div className={styles.sessionIdWrapper}>
-        {/* {sessionStatus} <br />
         currentSession.stage: <br />
         {currentSession.stage} <br />
         currentSession.questions.length: <br />
-        {currentSession.questions.length} <br /> */}
+        {currentSession.questions.length} <br />
         Session Id: {currentSession.id}
         <button className={styles.copyButton}>
           <CopyToClipboard text={String(currentSession.id)} onCopy={handleCopy}>
@@ -57,12 +49,7 @@ const SessionModal = ({
         ))} */}
       </div>
       <div className={styles.questionWrapper}>
-        {sessionStatus === 'notStarted' &&
-          <button onClick={handleAdvance}>
-            start!
-          </button>
-        }
-        {sessionStatus === 'started' && currentSession.questions.map((question, index) => {
+        {currentSession.questions.map((question, index) => {
           if (currentSession.stage !== -1 && index === currentSession.stage) {
             return (
               <div key={index}>
@@ -75,19 +62,17 @@ const SessionModal = ({
                     </div>
                   ))}
                 </div>
-                <button onClick={handleAdvance}>
-                  next
-                </button>
               </div>
             )
           }
           return null;
         })}
-        {sessionStatus === 'end' &&
-          <button onClick={endSession}>
-            end
-          </button>
-        }
+        <button onClick={handleAdvance}>
+          next
+        </button>
+        <button onClick={endSession}>
+          end
+        </button>
       </div>
       <button onClick={endSession}>end</button>
     </Modal>

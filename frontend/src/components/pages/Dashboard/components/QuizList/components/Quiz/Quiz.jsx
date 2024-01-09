@@ -48,7 +48,6 @@ const Quiz = ({
     const res = await APICall('/admin/quiz/' + quizData.id + '/start', 'POST', null)
     if (res) {
       setSessionModalVisible(true);
-      console.log(res);
       fetchQuizData();
     }
   }
@@ -63,7 +62,7 @@ const Quiz = ({
   const advanceSession = async () => {
     const res = await APICall('/admin/quiz/' + quizData.id + '/advance', 'POST', null)
     if (res) {
-      console.log(res)
+      // console.log(res)
       setCurrentSession({
         ...currentSession,
         stage: res.stage,
