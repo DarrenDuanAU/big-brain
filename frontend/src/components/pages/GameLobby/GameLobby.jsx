@@ -16,6 +16,7 @@ const GameLobby = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const data = await PlayerAPICall('/play/join/' + sessionId, 'POST', { name: playerName });
+    console.log(data);
     navigateToPlayerPanel(sessionId, data.playerId);
   };
 

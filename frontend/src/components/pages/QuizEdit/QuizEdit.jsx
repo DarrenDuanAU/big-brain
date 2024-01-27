@@ -7,13 +7,13 @@ import APICall from '../../apis/APICall';
 import Topbar from '../shared/Topbar/Topbar';
 import styles from './QuizEdit.module.css';
 import Button from '@mui/material/Button';
-import AddEditQuestionModal from './components/AddEditQuestionModal/AddEditQuestionModal';
-import QuestionList from './components/QuestionList/QuestionList';
+import AddQuestionModal from './components/AddQuestionModal';
+import QuestionTable from './components/QuestionTable/QuestionTable';
 
 function QuizEdit () {
   const [fullQuizData, setFullQuizData] = useState(null);
   const [showAddEditQuestionModal, setShowAddEditQuestionModal] = useState(false);
-  const [targetQuestion, setTargetQuestion] = useState(null);
+  // const [targetQuestion, setTargetQuestion] = useState(null);
   const params = useParams();
   const navigate = useNavigate();
 
@@ -28,7 +28,7 @@ function QuizEdit () {
 
   const actionAddQuestionHandler = () => {
     setShowAddEditQuestionModal(true);
-    setTargetQuestion(null);
+    // setTargetQuestion(null);
   }
 
   return (
@@ -39,25 +39,24 @@ function QuizEdit () {
       </div>
       <div className={styles.contentWrapper}>
         <div className={styles.tableWrapper}>
-          <QuestionList
-            setTargetQuestion ={setTargetQuestion}
+          <QuestionTable
             fullQuizData={fullQuizData}
-            setShowAddEditQuestionModal={setShowAddEditQuestionModal}
             setFullQuizData={setFullQuizData}
+            setShowAddEditQuestionModal={setShowAddEditQuestionModal}
             params={params}
-          />
+             />
         </div>
         <div className={styles.buttonsContainer}>
           <Button variant='contained' onClick={actionAddQuestionHandler}>add New Question</Button>
         </div>
       </div>
-
-      {showAddEditQuestionModal && <AddEditQuestionModal
-        targetQuestion = {targetQuestion}
-        setVisible={setShowAddEditQuestionModal}
-        fetchedQuestions={fullQuizData.questions}
-        setFullQuizData={setFullQuizData} />}
-
+       {showAddEditQuestionModal &&
+        <AddQuestionModal
+          setVisible={setShowAddEditQuestionModal}
+          fetchedQuestions={fullQuizData.questions}
+          // setFullQuizData={setFullQuizData}
+          />
+        }
     </div>
   )
 }

@@ -1,9 +1,9 @@
 import React from 'react'
-import styles from './QuestionList.module.css';
+import styles from './QuestionTable.module.css';
 import APICall from '../../../../apis/APICall';
 import DropDown from './components/DropDown';
 
-const QuestionList = ({
+const QuestionTable = ({
   setTargetQuestion,
   fullQuizData,
   setFullQuizData,
@@ -83,4 +83,4 @@ const QuestionList = ({
     </div>
   )
 }
-export default QuestionList;
+export default QuestionTable;
