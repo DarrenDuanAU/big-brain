@@ -8,6 +8,7 @@ import { v4 } from 'uuid';
 const AddQuestionModal = ({
   setVisible,
   fetchedQuestions,
+  targetQuestion
 }) => {
   const {
     register,
@@ -35,18 +36,18 @@ const AddQuestionModal = ({
     <Modal setVisible={setVisible}>
       <form onSubmit={handleSubmit(onSubmit)}>
         <label htmlFor='question'>Question:</label><br/>
-        <input id='question' defaultValue='' {...register('str')} /><br/>
+        <input id='question' defaultValue={targetQuestion?.str} {...register('str')} /><br/>
         <label htmlFor='time'>time limit:</label><br/>
-        <input id='time' defaultValue='' {...register('time')} /><br/>
+        <input id='time' defaultValue={targetQuestion?.time} {...register('time')} /><br/>
         <label htmlFor='points'>points:</label><br/>
-        <input id='points' defaultValue='' {...register('points')} /><br/>
+        <input id='points' defaultValue={targetQuestion?.points} {...register('points')} /><br/>
         <section>
           <p>options</p>
           {choices.map((choice, index) =>
             <div key={choice} className={styles.choiceWrapper}>
               <label htmlFor={choice}>{choice}:</label>
-              <input id={choice} defaultValue='' {...register(`choices[${index}]`)} />
-              <input type="checkbox" {...register(`answers[${index}]`)}/>
+              <input id={choice} defaultValue={targetQuestion?.choices[index]} {...register(`choices[${index}]`)} />
+              <input type="checkbox" defaultChecked={targetQuestion?.answers[index]} {...register(`answers[${index}]`)}/>
             </div>
           )}
         </section>

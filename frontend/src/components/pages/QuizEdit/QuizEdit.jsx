@@ -13,7 +13,7 @@ import QuestionTable from './components/QuestionTable/QuestionTable';
 function QuizEdit () {
   const [fullQuizData, setFullQuizData] = useState(null);
   const [showAddEditQuestionModal, setShowAddEditQuestionModal] = useState(false);
-  // const [targetQuestion, setTargetQuestion] = useState(null);
+  const [targetQuestion, setTargetQuestion] = useState(null);
   const params = useParams();
   const navigate = useNavigate();
 
@@ -26,9 +26,9 @@ function QuizEdit () {
     setFullQuizData(res)
   }
 
-  const actionAddQuestionHandler = () => {
+  const addQuestionHandler = () => {
     setShowAddEditQuestionModal(true);
-    // setTargetQuestion(null);
+    setTargetQuestion(null);
   }
 
   return (
@@ -43,17 +43,19 @@ function QuizEdit () {
             fullQuizData={fullQuizData}
             setFullQuizData={setFullQuizData}
             setShowAddEditQuestionModal={setShowAddEditQuestionModal}
+            setTargetQuestion={setTargetQuestion}
             params={params}
              />
         </div>
         <div className={styles.buttonsContainer}>
-          <Button variant='contained' onClick={actionAddQuestionHandler}>add New Question</Button>
+          <Button variant='contained' onClick={addQuestionHandler}>add New Question</Button>
         </div>
       </div>
        {showAddEditQuestionModal &&
         <AddQuestionModal
           setVisible={setShowAddEditQuestionModal}
           fetchedQuestions={fullQuizData.questions}
+          targetQuestion={targetQuestion}
           // setFullQuizData={setFullQuizData}
           />
         }

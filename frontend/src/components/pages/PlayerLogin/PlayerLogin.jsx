@@ -4,7 +4,7 @@ import {
 } from 'react-router-dom';
 import PlayerAPICall from '../../apis/PlayerAPICall';
 
-const GameLobby = () => {
+const PlayerLogin = () => {
   const [sessionId, setSessionId] = useState();
   const [playerName, setPlayerName] = useState();
   const navigate = useNavigate();
@@ -38,4 +38,4 @@ const GameLobby = () => {
   )
 }
 
-export default GameLobby;
+export default PlayerLogin;

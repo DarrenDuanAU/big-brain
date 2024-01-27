@@ -4,7 +4,7 @@ import {
   useParams
 } from 'react-router-dom';
 
-const Player = () => {
+const GamePanel = () => {
   const params = useParams();
 
   const CheckStatus = async () => {
@@ -28,4 +28,4 @@ const Player = () => {
   )
 }
 
-export default Player;
+export default GamePanel;

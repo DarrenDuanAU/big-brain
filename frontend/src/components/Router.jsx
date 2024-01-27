@@ -15,7 +15,7 @@ import {
   Route,
 } from 'react-router-dom';
 // import { useContext, Context } from '../context';
-import GameLobby from './pages/GameLobby';
+import PlayerLogin from './pages/PlayerLogin';
 // import Topbar from './page/shared/Topbar/Topbar';
 // import Quiz from './Quiz';
 
@@ -44,7 +44,7 @@ function Router () {
             {/* (<Route path="/QuizEdit" element={ <QuizEdit />}/>) */}
             (<Route path="/QuizEdit/:quizId" element={ <QuizEdit/>}/>)
             {/* (<Route path="/QuizEdit/:quizId/QuestionEdit/:questionId" element={ <QuestionEdit/>}/>) */}
-            (<Route path="/GameLobby" element={<GameLobby />}/>)
+            (<Route path="/player-login" element={<PlayerLogin />}/>)
             (<Route path="/Session/:sessionId/Player/:playerId" element={<GamePanel/>}/>)
 
             {/* (<Route path="/PlayJoin" element={<PlayJoin/>}/>)
