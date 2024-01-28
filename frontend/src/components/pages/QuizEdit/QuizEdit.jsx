@@ -7,12 +7,12 @@ import APICall from '../../apis/APICall';
 import Topbar from '../shared/Topbar/Topbar';
 import styles from './QuizEdit.module.css';
 import Button from '@mui/material/Button';
-import AddQuestionModal from './components/AddQuestionModal';
-import QuestionTable from './components/QuestionTable/QuestionTable';
+import AddEditQuestionModal from './components/AddEditQuestionModal';
+import QuestionTable from './components/QuestionTable';
 
 function QuizEdit () {
-  const [fullQuizData, setFullQuizData] = useState(null);
-  const [showAddEditQuestionModal, setShowAddEditQuestionModal] = useState(false);
+  const [questions, setQuestions] = useState(null);
+  const [showModal, setShowModal] = useState(false);
   const [targetQuestion, setTargetQuestion] = useState(null);
   const params = useParams();
   const navigate = useNavigate();
@@ -23,26 +23,33 @@ function QuizEdit () {
 
   const fetchQuizData = async () => {
     const res = await APICall('/admin/quiz/' + params.quizId, 'GET', null)
-    setFullQuizData(res)
+    setQuestions(res.questions)
   }
 
   const addQuestionHandler = () => {
-    setShowAddEditQuestionModal(true);
+    setShowModal(true);
     setTargetQuestion(null);
+  }
+
+  const toDashboardHandler = async () => {
+    await APICall('/admin/quiz/' + params.quizId, 'PUT', {
+      questions
+    });
+    navigate('/dashboard');
   }
 
   return (
     <div className={styles.pageWrapper}>
       <Topbar />
       <div className={styles.toDashboardButtonContainer}>
-        <Button variant='contained' onClick={() => navigate('/dashboard')}>to dashboard</Button>
+        <Button variant='contained' onClick={toDashboardHandler}>to dashboard</Button>
       </div>
       <div className={styles.contentWrapper}>
         <div className={styles.tableWrapper}>
           <QuestionTable
-            fullQuizData={fullQuizData}
-            setFullQuizData={setFullQuizData}
-            setShowAddEditQuestionModal={setShowAddEditQuestionModal}
+            questions={questions}
+            setQuestions={setQuestions}
+            setShowAddEditQuestionModal={setShowModal}
             setTargetQuestion={setTargetQuestion}
             params={params}
              />
@@ -51,12 +58,11 @@ function QuizEdit () {
           <Button variant='contained' onClick={addQuestionHandler}>add New Question</Button>
         </div>
       </div>
-       {showAddEditQuestionModal &&
-        <AddQuestionModal
-          setVisible={setShowAddEditQuestionModal}
-          fetchedQuestions={fullQuizData.questions}
+       {showModal &&
+        <AddEditQuestionModal
+          setVisible={setShowModal}
+          setQuestions={setQuestions}
           targetQuestion={targetQuestion}
-          // setFullQuizData={setFullQuizData}
           />
         }
     </div>

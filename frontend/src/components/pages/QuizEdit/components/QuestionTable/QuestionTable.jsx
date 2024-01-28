@@ -1,37 +1,25 @@
 import React from 'react'
 import styles from './QuestionTable.module.css';
-import APICall from '../../../../apis/APICall';
 import DropDown from './components/DropDown';
+import { numberToChar } from '../../../../service';
 
 const QuestionTable = ({
   setTargetQuestion,
-  fullQuizData,
-  setFullQuizData,
+  questions,
+  setQuestions,
   setShowAddEditQuestionModal,
   params
 }) => {
-  const numberToChar = (number) => {
-    if (number >= 0 && number <= 25) {
-      return String.fromCharCode(65 + number);
-    } else {
-      return null;
-    }
-  }
-
   const editQuestionHandler = (question) => {
     setTargetQuestion(question);
     setShowAddEditQuestionModal(true);
   }
 
   const deleteQuestionHandler = async (targetId) => {
-    const questions = fullQuizData?.questions?.filter(question => question.id !== targetId);
-    const res = await APICall('/admin/quiz/' + params.quizId, 'PUT', {
-      questions
-    });
-    if (res) {
-      const temp = await APICall('/admin/quiz/' + params.quizId, 'GET', null)
-      setFullQuizData(temp);
-    }
+    setQuestions(prevQuestions => {
+      const newQuestions = prevQuestions?.filter(question => question.id !== targetId);
+      return newQuestions
+    })
   };
 
   return (
@@ -48,7 +36,7 @@ const QuestionTable = ({
           </tr>
         </thead>
         <tbody>
-          {fullQuizData?.questions?.map((question, index) => (
+          {questions?.map((question, index) => (
           <tr key={index} className={styles.tableRow}>
             <td className={styles.colOne} >{
               question.str.length < 80
@@ -56,10 +44,10 @@ const QuestionTable = ({
                 : question.str.substring(0, 80) + '......'
             }
             </td>
-            <td className={styles.colTwo}>{question.point} </td>
+            <td className={styles.colTwo}>{question.points} </td>
             <td className={styles.colThree}>{question.time} </td>
             <td className={styles.colFour} >{question.choices.map((item, index) => (numberToChar(index) + ': ' + item)).join(' / ')}</td>
-            <td className={styles.colFive} >{question.answers.map((isAnswer, index) => {
+            <td className={styles.colFive} >{question.booleanAnswers.map((isAnswer, index) => {
               if (isAnswer) {
                 return numberToChar(index);
               }
@@ -72,8 +60,6 @@ const QuestionTable = ({
                 editQuestionHandler={editQuestionHandler}
                 deleteQuestionHandler={deleteQuestionHandler}
               />
-              {/* <button onClick={() => { editQuestionHandler(question) }}>edit</button>
-              <button onClick={() => { deleteQuestionHandler(question.id) }}>delete</button> */}
             </td>
           </tr>
           ))}

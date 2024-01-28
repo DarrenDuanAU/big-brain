@@ -13,17 +13,26 @@ export const quizQuestionPublicReturn = question => {
  the correct answers (minimum 1).
 */
 export const quizQuestionGetCorrectAnswers = question => {
-  // console.log('!!!!!! correct answer the question is !!!!!!:', question)
-  const tempList = [];
-  for (let i = 0; i < question.choice.length; i++) {
-    // console.log('!!!!!! correct answer in the loop!!!!!!:', question.choice[i].id)
-    if (question.choice[i].check === true){
-      tempList.push(question.choice[i].id);
-      // console.log('!!!!!! correct answer pushed in!!!!!!:', question.choice[i].id)
+  const answers = [];
+  question.booleanAnswers.forEach((isAnswer, index) => {
+    if (isAnswer) {
+      answers.push(question.choices[index])
     }
-  }
-  // console.log('!!!!!! correct answer the tempList is !!!!!!:', tempList)
-  return tempList;
+  });
+  console.log('answers',answers)
+  return answers;
+
+  // console.log('!!!!!! correct answer the question is !!!!!!:', question)
+  // const tempList = [];
+  // for (let i = 0; i < question.choice.length; i++) {
+  //   // console.log('!!!!!! correct answer in the loop!!!!!!:', question.choice[i].id)
+  //   if (question.choice[i].check === true){
+  //     tempList.push(question.choice[i].id);
+  //     // console.log('!!!!!! correct answer pushed in!!!!!!:', question.choice[i].id)
+  //   }
+  // }
+  // // console.log('!!!!!! correct answer the tempList is !!!!!!:', tempList)
+  // return tempList;
   // return ['3ff20949-20b9-499f-879f-c1bdc29bcf6f']; // For a single answer
 };
 
@@ -32,7 +41,7 @@ export const quizQuestionGetCorrectAnswers = question => {
  all of the answers, correct or incorrect.
 */
 export const quizQuestionGetAnswers = question => {
-  // console.log('!!!!!! all answer the question is !!!!!!:', question)
+  console.log('!!!!!! all answer the question is !!!!!!:', question)
   const tempList = [];
   for (let i = 0; i < question.choice.length; i++) {
     // console.log('!!!!!! all answer in the loop!!!!!!:', question.choice[i].id)

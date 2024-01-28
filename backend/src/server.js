@@ -164,6 +164,7 @@ app.get('/play/:playerid/status', catchErrors(async (req, res) => {
 
 app.get('/play/:playerid/question', catchErrors(async (req, res) => {
   const { playerid, } = req.params;
+  console.log(playerid)
   return res.status(200).send({ question: await getQuestion(playerid), });
 }));
 

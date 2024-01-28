@@ -13,8 +13,8 @@ function Dashboard () {
 
   const updateQuizzes = async () => {
     const data = await APICall('/admin/quiz', 'GET', null);
-    console.log('dashboard print:', data);
-    console.log('dashboard data.quizzes print:', data.quizzes);
+    // console.log('dashboard print:', data);
+    // console.log('dashboard data.quizzes print:', data.quizzes);
     setQuizzesData(data.quizzes)
   }
 

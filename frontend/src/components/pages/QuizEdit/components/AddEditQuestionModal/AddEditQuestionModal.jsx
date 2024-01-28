@@ -1,36 +1,33 @@
 import React from 'react';
 import Modal from '../../../../Modal'
 import { useForm } from 'react-hook-form'
-import styles from './AddQuestionModal.module.css'
-import APICall from '../../../../apis/APICall';
-import { useParams } from 'react-router-dom';
+import styles from './AddEditQuestionModal.module.css'
 import { v4 } from 'uuid';
+import { numberToChar } from '../../../../service';
 const AddQuestionModal = ({
   setVisible,
-  fetchedQuestions,
-  targetQuestion
+  targetQuestion,
+  setQuestions
 }) => {
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const params = useParams();
-  const choices = ['A', 'B', 'C', 'D']
+  const optionsNum = 4;
+  const options = [...Array(optionsNum).keys()];
 
   const onSubmit = async (data) => {
     console.log(data);
-    const randomId = v4();
-    const questions = [
-      ...fetchedQuestions,
-      { ...data, id: randomId }
-    ];
-    const res = await APICall('/admin/quiz/' + params.quizId, 'PUT', {
-      questions
-    });
-    if (res) {
-      setVisible(false);
-    }
+    setQuestions(prevQuestions => {
+      const randomId = v4();
+      const newQuestions = [
+        ...prevQuestions,
+        { ...data, id: randomId }
+      ];
+      return newQuestions
+    })
+    setVisible(false);
   };
   return (
     <Modal setVisible={setVisible}>
@@ -43,11 +40,11 @@ const AddQuestionModal = ({
         <input id='points' defaultValue={targetQuestion?.points} {...register('points')} /><br/>
         <section>
           <p>options</p>
-          {choices.map((choice, index) =>
+          {options.map((choice, index) =>
             <div key={choice} className={styles.choiceWrapper}>
-              <label htmlFor={choice}>{choice}:</label>
+              <label htmlFor={choice}>{numberToChar(choice)}:</label>
               <input id={choice} defaultValue={targetQuestion?.choices[index]} {...register(`choices[${index}]`)} />
-              <input type="checkbox" defaultChecked={targetQuestion?.answers[index]} {...register(`answers[${index}]`)}/>
+              <input type="checkbox" defaultChecked={targetQuestion?.booleanAnswers[index]} {...register(`booleanAnswers[${index}]`)}/>
             </div>
           )}
         </section>
