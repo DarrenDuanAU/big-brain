@@ -1,11 +1,15 @@
-# Demo
+# Big-Brain
 
-## 
+## intro
+
+An interactive learning platform is widely used in educational settings. It offers a gamified approach to learning, allowing educators to create quizzes, surveys, and games that engage students in real-time using their mobile devices.
+
+## Demo
 - designed the UI and user flow
 - build project from scratch with React.js, module.css, MUI
 - interact with backend REATful APIs
 
-signin:
+sign in:
 ![alt text](https://github.com/DarrenDuanAU/big-brain/blob/main/demo-images/signin-demo.png)
 
 dashboard:
