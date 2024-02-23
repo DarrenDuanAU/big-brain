@@ -18,12 +18,14 @@ dashboard:
 
 ## Quick Start
 
-- download this repo
+download this repo
 ### run the backend
 
-- In the project backend folder and run:
+In the project backend folder and run:
+
 `npm install` and then `npm start`
 ### run the frontend
 
-- In the project frontend folder and run:
+In the project frontend folder and run:
+
 `npm install` and then `npm start`
