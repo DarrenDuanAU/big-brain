@@ -1,4 +1,4 @@
-## intro
+## Intro
 
 An interactive learning platform is widely used in educational settings. It offers a gamified approach to learning, allowing educators to create quizzes, surveys, and games that engage students in real-time using their mobile devices.
 
