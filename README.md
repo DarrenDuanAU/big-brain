@@ -14,6 +14,27 @@ dashboard:
 ![alt text](https://github.com/DarrenDuanAU/big-brain/blob/main/demo-images/dashboard-demo.png)
 
 
+## Details
+
+### Frontend
+The basic structure of this project:
+- App
+  - pages
+    - LogIn
+    - Dashboard
+    - QuizEdit
+    - GamePanel
+    - PlayerLogin
+  - shared
+    - TopBar
+    - Modal
+
+### Backend
+- index
+  - error
+  - server
+  - service
+
 ## Quick Start
 
 download this repo
